@@ -1,0 +1,2 @@
+Grafico_teste;A(A);B(B)
+[0]*x+[1]
