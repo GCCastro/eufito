@@ -1,7 +1,7 @@
 eufito
 
 Hardware eventually fails. Software eventually works.
-
+Pilada na testa
 
 1. Introdução
 
