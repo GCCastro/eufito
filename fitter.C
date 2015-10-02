@@ -14,6 +14,7 @@
 #include "TPaveStats.h"
 #include "TStyle.h"
 #include "TLegend.h"
+#include "TAxis.h"
 #include <unistd.h>
 
 #include <fstream>
@@ -33,15 +34,21 @@ int main(int argc, char **argv) {
   const char* paramf = argv[1];
   const char* dadosf = argv[2];
 
-  string titulo, faju;
   ifstream det(paramf);
-  if(det.is_open())
-    {
-      getline(det,titulo);
-      getline(det,faju);
 
-    }
-  else cout << "Erro. Nao foi possivel abrir o ficheiro" << endl;
+  string titulo,faju;
+  if (det.is_open())
+  {
+    det.ignore(256,':');
+    getline(det,titulo);
+    det.ignore(256,':');
+    getline(det,faju);
+  }
+  else
+  {
+    cout << "Erro. Nao foi possivel abrir o ficheiro" << endl;
+  }
+
 
   bool eufito = true;
   //bool eufito = false;
@@ -49,6 +56,7 @@ int main(int argc, char **argv) {
 
   //faz aparecer o canvas
   TApplication theApp("App", &argc, argv);
+  theApp.InitializeGraphics();
  
   //box com resultados do fit
   gStyle->SetOptFit();
@@ -78,6 +86,10 @@ int main(int argc, char **argv) {
   gr1->SetLineWidth(1);
   gr1->SetFillStyle(0);
 
+
+
+
+
   //funcao a fittar
   TF1 *f1 = new TF1("f1",faju.c_str());
   //  f1->SetParLimits(0,7,9);
@@ -94,6 +106,9 @@ int main(int argc, char **argv) {
 
   //Draws, prints e updates no canvas
   mg->Draw("AP");
+  mg->GetXaxis()->SetLimits(0.0,11.0);
+  mg->SetMinimum(0.);
+  mg->SetMaximum(11.);
   c1->Update();
 
   //legenda
@@ -129,5 +144,6 @@ int main(int argc, char **argv) {
  
   c1->Print("plot.pdf");
   getchar();
+  theApp.Terminate();
   return 0;
 }
