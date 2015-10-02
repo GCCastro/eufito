@@ -10,8 +10,14 @@ Este programa faz ajustes de funções de 1 variável (até agora) a conjuntos d
 
 2. Funcionamento
 
+fitter.C:
 para compilar basta escrever make
 para executar escrever ./fitter.exe detalhes.txt dados.txt
+
+main.C:
+para compilar basta escrever make
+para executar escrever /.main param.txt dados.txt
+
 
 2.1. fitter
 
