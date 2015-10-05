@@ -1,6 +1,6 @@
 eufito
 
-Hardware eventually fails. Software eventually works.
+Hardware eventually fails. Software eventually works. And fail, we shall.
 Pilada na testa
 
 1. Introdução
