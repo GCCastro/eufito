@@ -2,13 +2,14 @@
 #include "fstream"
 
 using namespace std;
+//merdas
 
 //Construtor
 Opt::Opt(string fparam, string fdados)
 {
   ficheiro = fparam;
   dados = fdados;
-  ifstream det(fparam);
+  ifstream det(fparam.c_str());
   if (det.is_open())
   {
     det.ignore(256,':');
