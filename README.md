@@ -1,4 +1,5 @@
 eufito
+oi
 
 Hardware eventually fails. Software eventually works. And fail, we shall.
 Pilada na testa
