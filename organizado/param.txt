@@ -1,3 +1,3 @@
-opcao:fit
+opcao:histograma
 titulo:Grafico_teste;A(A);B(B)
 func:[0]+x*[1]

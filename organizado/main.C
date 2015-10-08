@@ -10,6 +10,8 @@
 #include "TF1.h"
 #include "TPaveStats.h"
 #include <TList.h>
+#include <TPad.h>
+#include <TH1.h>
 
 //Header's nao de ROOT
 #include <iostream>  //Porque razoes
@@ -67,19 +69,14 @@ int main(int argc, char **argv)
   }
   else if (escolha == "histograma")
   {
-    Decisao->Histograma();
+    TH1F* hist=Decisao->Histograma();
+    hist->Draw();
   }
   else if (escolha == "fit")
   {
     TGraphErrors* gr = Decisao->Grafico();
     Decisao->Ajuste(gr);
     mg->Add(gr);
-    mg->Draw("AP");
-    mg->GetXaxis()->SetLimits(0.0,11.0);
-    mg->SetMinimum(0.);
-    mg->SetMaximum(11.);
-    c1->Update();
-
     // TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
     // //  TPaveStats *stats2 = (TPaveStats*)gr2->GetListOfFunctions()->FindObject("stats");
     // stats1->SetTextColor(kBlue); 
@@ -88,15 +85,13 @@ int main(int argc, char **argv)
     // //  stats2->SetX1NDC(0.3); stats2->SetX2NDC(0.5); stats2->SetY1NDC(0.8);
   }
 
-
-  if (escolha !="fit")
-{
- mg->Draw("AP");
+  if (escolha !="histograma") {
+  mg->Draw("AP");
   mg->GetXaxis()->SetLimits(0.0,11.0);
   mg->SetMinimum(0.);
   mg->SetMaximum(11.);
   c1->Update();
-}
+  }
   
   c1->Modified();
   c1->Print("plot.pdf");
