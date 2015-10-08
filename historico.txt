@@ -3,3 +3,16 @@ O programa por vezes funciona por vezes não. Estou confuso.
 
 3 Outubro 2015
 O programa consegue fazer, sem qualquer tipo de problemas, ajustes e gráficos apenas de pontos. A segmentation violation que dava anteriormente foi corrigida fazendo terminate de theApp no final. Passei o programa principal para o directório organizado/, onde está, agora, arranjado numa main e numa class, Opt, que executa os métodos específicos para cada pedido (Ajuste, Gráfico, Histograma). O fitter.C continuará no Git (e no meu computador) de modo a servir de salvaguarda caso no fim nada das classes funcione e para testar os histogramas, quando chegar a vez deles.
+
+8 Outubro 2015 (Pedro)
+pus o gajo a fazer fits, a receber a funcao e o nome do grafico e dos eixos do ficheiro param.txt.
+sintaxe do param.txt (exemplo):
+ opcao:fit
+ titulo:Grafico_teste;A(A);B(B)	
+ func:[0]+x*[1]
+
+para isso adicionei as seguintes variaveis aos data members do Opt:
+    string func;
+    string titulo;
+    vector<string> mainsender;
+os strings são self-explaining, o vetor de strings é para mandar para poder mandar para o main o titulo e a opcao escolhida.
