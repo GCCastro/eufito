@@ -7,6 +7,9 @@
 #include "TApplication.h"  //Janela
 #include "TAxis.h"  //Eixos dos graficos
 #include "TMultiGraph.h"  //Varios graficos sobrepostos
+#include "TF1.h"
+#include "TPaveStats.h"
+#include <TList.h>
 
 //Header's nao de ROOT
 #include <iostream>  //Porque razoes
@@ -46,13 +49,15 @@ int main(int argc, char **argv)
   c1->GetFrame()->SetFillColor(21);
   c1->GetFrame()->SetBorderSize(12);
 
+  Opt *Decisao = new Opt(paramf, dadosf);
+  vector<string> cenas = Decisao->Escolher(); 
   TMultiGraph *mg = new TMultiGraph("mg","mg");
   //mg->SetTitle(titulo.c_str());
-  mg->SetTitle("Por favor, funciona");
+  mg->SetTitle(cenas[1].c_str());
 
 
-  Opt *Decisao = new Opt(paramf, dadosf);
-  string escolha = Decisao->Escolher();  
+  
+  string escolha = cenas[0];  
   cout << escolha << endl;
 
   if (escolha == "grafico")
@@ -64,18 +69,35 @@ int main(int argc, char **argv)
   {
     Decisao->Histograma();
   }
-  else if (escolha == "Fit")
+  else if (escolha == "fit")
   {
-    Decisao->Ajuste();
+    TGraphErrors* gr = Decisao->Grafico();
+    Decisao->Ajuste(gr);
+    mg->Add(gr);
+    mg->Draw("AP");
+    mg->GetXaxis()->SetLimits(0.0,11.0);
+    mg->SetMinimum(0.);
+    mg->SetMaximum(11.);
+    c1->Update();
+
+    // TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
+    // //  TPaveStats *stats2 = (TPaveStats*)gr2->GetListOfFunctions()->FindObject("stats");
+    // stats1->SetTextColor(kBlue); 
+    // //   stats2->SetTextColor(kRed); 
+    // stats1->SetX1NDC(0.7); stats1->SetX2NDC(0.9); stats1->SetY1NDC(0.1); stats1->SetY2NDC(0.3);
+    // //  stats2->SetX1NDC(0.3); stats2->SetX2NDC(0.5); stats2->SetY1NDC(0.8);
   }
 
 
-  mg->Draw("AP");
+  if (escolha !="fit")
+{
+ mg->Draw("AP");
   mg->GetXaxis()->SetLimits(0.0,11.0);
   mg->SetMinimum(0.);
   mg->SetMaximum(11.);
   c1->Update();
-
+}
+  
   c1->Modified();
   c1->Print("plot.pdf");
   getchar();

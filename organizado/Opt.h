@@ -1,6 +1,7 @@
 #include "TGraphErrors.h"
 #include "TH1F.h"
 #include "TNamed.h"
+#include <vector>
 
 #include <string>
 #include <iostream>
@@ -11,14 +12,16 @@ class Opt
 {
   public:
     Opt(string, string);
-    string Escolher();
+    vector<string> Escolher();
     TH1F* Histograma();
-    TGraphErrors* Ajuste();
+    TGraphErrors* Ajuste(TGraphErrors* gr);
     TGraphErrors* Grafico();
 
   private:
     string ficheiro;
     string dados;
     string opcao;
-
+    string func;
+    string titulo;
+    vector<string> mainsender;
 };

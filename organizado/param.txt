@@ -1,1 +1,3 @@
-opcao:grafico
+opcao:fit
+titulo:Grafico_teste;A(A);B(B)
+func:[0]+x*[1]
