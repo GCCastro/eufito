@@ -8,6 +8,7 @@ using namespace std;
 //Construtor
 Opt::Opt(string fparam, string fdados)
 {
+  string dim1,dim2,dim3,dim4;
   ficheiro = fparam;
   dados = fdados;
   ifstream det(fparam.c_str());
@@ -19,9 +20,22 @@ Opt::Opt(string fparam, string fdados)
     getline(det,titulo);
     det.ignore(256,':');
     getline(det,func);
-    
+    det.ignore(256,':');
+    getline(det,dim1);
+    det.ignore(256,':');
+    getline(det,dim2);
+    det.ignore(256,':');
+    getline(det,dim3);
+    det.ignore(256,':');
+    getline(det,dim4);
+
   }
   det.close();
+  dim.push_back(stof(dim1));
+  dim.push_back(stof(dim2));
+  dim.push_back(stof(dim3));
+  dim.push_back(stof(dim4));
+
   cout << "O ficheiro de parametros e " << ficheiro << " e a opcao e " << opcao << endl;
 }
 
@@ -70,6 +84,11 @@ TGraphErrors* Opt::Grafico()
   gr1->SetLineWidth(1);
   gr1->SetFillStyle(0);
 
+  gr1->GetXaxis()->SetLimits(dim[0],dim[1]);
+  gr1->SetMinimum(dim[2]);
+  gr1->SetMaximum(dim[3]);
+
+
   return gr1;
 }
 
@@ -83,4 +102,10 @@ TH1F* Opt::Histograma()
   return hist;
 
 
+}
+
+
+vector<int> Opt::Return_dims()
+{
+  return dim;
 }

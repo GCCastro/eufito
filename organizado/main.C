@@ -7,16 +7,17 @@
 #include "TApplication.h"  //Janela
 #include "TAxis.h"  //Eixos dos graficos
 #include "TMultiGraph.h"  //Varios graficos sobrepostos
-#include "TF1.h"
-#include "TPaveStats.h"
-#include <TList.h>
-#include <TPad.h>
-#include <TH1.h>
+#include "TStyle.h"  //Caixa do fit
+#include "TF1.h"  //Funcoes
+#include "TPaveStats.h"  //Customizacao da caixa de parametros do fit
+#include <TList.h>  //Nao sei, alguem diga alguma coisa
+#include <TPad.h>  //Quem e que pos isto aqui, esta la em cima...
+#include <TH1.h>  //Classe base dos histogramas
 
 //Header's nao de ROOT
 #include <iostream>  //Porque razoes
 #include <fstream>  //Ficheiros
-#include "Opt.h"
+#include "Opt.h"  //Classe que faz coisas
 
 using namespace std;
 
@@ -75,6 +76,7 @@ int main(int argc, char **argv)
   else if (escolha == "fit")
   {
     TGraphErrors* gr = Decisao->Grafico();
+    gStyle->SetOptFit();
     Decisao->Ajuste(gr);
     mg->Add(gr);
     // TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
@@ -86,10 +88,11 @@ int main(int argc, char **argv)
   }
 
   if (escolha !="histograma") {
+  vector<int> dim = Decisao->Return_dims();
   mg->Draw("AP");
-  mg->GetXaxis()->SetLimits(0.0,11.0);
-  mg->SetMinimum(0.);
-  mg->SetMaximum(11.);
+  mg->GetXaxis()->SetLimits(dim[0],dim[1]);
+  mg->SetMinimum(dim[2]);
+  mg->SetMaximum(dim[3]);
   c1->Update();
   }
   
