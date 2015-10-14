@@ -31,10 +31,10 @@ Opt::Opt(string fparam, string fdados)
 
   }
   det.close();
-  dim.push_back(stof(dim1));
-  dim.push_back(stof(dim2));
-  dim.push_back(stof(dim3));
-  dim.push_back(stof(dim4));
+  dim.push_back(atof(dim1.c_str()));
+  dim.push_back(atof(dim2.c_str()));
+  dim.push_back(atof(dim3.c_str()));
+  dim.push_back(atof(dim4.c_str()));
 
   cout << "O ficheiro de parametros e " << ficheiro << " e a opcao e " << opcao << endl;
 }
