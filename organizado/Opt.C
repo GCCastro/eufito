@@ -1,6 +1,7 @@
 #include "Opt.h"
 #include "fstream"
 #include "TF1.h"
+#include <cstdlib>
 
 using namespace std;
 //merdas
@@ -77,11 +78,12 @@ TGraphErrors* Opt::Grafico()
   TGraphErrors *gr1 = new TGraphErrors(dados.c_str(),"%lg %lg %lg %lg");
   gr1->SetName("gr1");
   gr1->SetTitle("graph 1");
-  gr1->SetMarkerStyle(20);
+  gr1->SetMarkerStyle(1);
   gr1->SetMarkerColor(kRed);
+  gr1->SetLineWidth(1);
 
   gr1->SetLineColor(1);
-  gr1->SetLineWidth(1);
+  gr1->SetLineWidth(0.1);
   gr1->SetFillStyle(0);
 
   gr1->GetXaxis()->SetLimits(dim[0],dim[1]);

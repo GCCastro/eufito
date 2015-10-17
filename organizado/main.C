@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 
   TCanvas *c1 = new TCanvas("c1","Nome",200,10,700,500);
   c1->SetFillColor(0);
-  c1->SetGrid();
+  //c1->SetGrid();
   c1->GetFrame()->SetFillColor(21);
   c1->GetFrame()->SetBorderSize(12);
 
