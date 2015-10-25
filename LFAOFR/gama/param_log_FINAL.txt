@@ -1,0 +1,7 @@
+opcao:fit
+titulo:Resolucao;log(E);log(R)
+func:[0] + [1]*x
+xmin:0
+xmax:8
+ymin:-4
+ymax:1
