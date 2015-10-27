@@ -62,7 +62,7 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
   cout << "Eu quero fazer um ajuste e jame deixam." << endl;
 
   TF1 *f1 = new TF1("f1",func.c_str());
-  //  f1->SetParLimits(0,7,9);
+  //  f1->SetParLimits(1,0.000104,0.000107);
   f1->SetLineColor(kBlue);
   gr1->Fit("f1","EMF");
  
@@ -87,8 +87,9 @@ TGraphErrors* Opt::Grafico()
   gr1->SetFillStyle(0);
 
   gr1->GetXaxis()->SetLimits(dim[0],dim[1]);
-  gr1->SetMinimum(dim[2]);
-  gr1->SetMaximum(dim[3]);
+  gr1->GetYaxis()->SetLimits(dim[2],dim[3]);
+  //gr1->SetMinimum(dim[2]);
+  //gr1->SetMaximum(dim[3]);
 
 
   return gr1;
