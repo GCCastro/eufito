@@ -77,6 +77,8 @@ int main(int argc, char **argv)
   {
     TGraphErrors* gr = Decisao->Grafico();
     gStyle->SetOptFit();
+    for(int i=0; i<=19; i++)
+      cout << "erro de x:" << gr->GetErrorX(i) << " erro de y:" << gr->GetErrorY(i) << endl;
     Decisao->Ajuste(gr);
     mg->Add(gr);
     // TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
@@ -88,6 +90,7 @@ int main(int argc, char **argv)
   }
 
   if (escolha !="histograma") {
+
   vector<int> dim = Decisao->Return_dims();
   mg->Draw("AP");
   mg->GetXaxis()->SetLimits(dim[0],dim[1]);
@@ -95,7 +98,7 @@ int main(int argc, char **argv)
   mg->SetMaximum(dim[3]);
   c1->Update();
   }
-  
+
   c1->Modified();
   c1->Print("plot.pdf");
   getchar();

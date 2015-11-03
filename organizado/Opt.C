@@ -74,17 +74,26 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
 TGraphErrors* Opt::Grafico()
 {
   cout << "Eu quero fazer um grafico e ja consigo!" << endl;
-
+  //int n=5;
   TGraphErrors *gr1 = new TGraphErrors(dados.c_str(),"%lg %lg %lg %lg");
+  //Double_t x[n] = {1,2,3,4,5};
+  //Double_t y[n] = {2,3,1,5,4};
+  //Double_t ex[n] = {0.1,0.2,0.3,0.4,0.5};
+  //Double_t ey[n] = {0.1,0.2,0.3,0.4,0.5};
+
+  //TGraphErrors *gr1 = new TGraphErrors(n,x,y,ex,ey);
+
   gr1->SetName("gr1");
   gr1->SetTitle("graph 1");
-  gr1->SetMarkerStyle(1);
+  gr1->SetMarkerStyle(8);
   gr1->SetMarkerColor(kRed);
-  gr1->SetLineWidth(1);
+  gr1->SetLineWidth(3);
 
-  gr1->SetLineColor(1);
-  gr1->SetLineWidth(0.1);
-  gr1->SetFillStyle(0);
+  gr1->SetLineColor(3);
+  gr1->SetLineWidth(0.5);
+  gr1->SetFillStyle(1);
+
+  gr1->SetFillColor(kBlack);
 
   gr1->GetXaxis()->SetLimits(dim[0],dim[1]);
   gr1->GetYaxis()->SetLimits(dim[2],dim[3]);

@@ -1,0 +1,7 @@
+opcao:fit
+titulo:Coisas;\text{Tensão(V)};Contagens
+func:[0]+x*[1]
+xmin:700
+xmax:1250
+ymin:1750
+ymax:2000
