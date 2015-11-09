@@ -24,6 +24,18 @@ para executar escrever /.main param.txt dados.txt
 
 2.2. detalhes do ajuste
 
+Opções possíveis: fit, grafico, histograma
+
+Ordem do ficheiro:
+
+opcao:<acção que se quer executar>
+titulo:<Título;nome das abcissas;nome das ordenadas>
+func:<função a ajustar(parâmetros devem estar na forma [0],[1],etc)>
+xmin:<valor mínimo das abcissas>
+xmax:<valor máximo das abcissas>
+ymin:<valor mínimo das ordenadas>
+ymax:<valor máximo das ordenadas>
+
 2.3. dados
 
 

@@ -20,7 +20,7 @@ EXE2= fitter.exe
 
 SRC3= main.C Opt.C
 OBJ3= $(SRC3:.C=.o)
-EXE3= main
+EXE3= main.exe
 
 SRC4= graf.C
 OBJ4= $(SRC4:.C=.o)
