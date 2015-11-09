@@ -78,7 +78,7 @@ int main(int argc, char **argv)
     TGraphErrors* gr = Decisao->Grafico();
     gStyle->SetOptFit();
     for(int i=0; i<=19; i++)
-      cout << "erro de x:" << gr->GetErrorX(i) << " erro de y:" << gr->GetErrorY(i) << endl;
+      //cout << "erro de x:" << gr->GetErrorX(i) << " erro de y:" << gr->GetErrorY(i) << endl;
     Decisao->Ajuste(gr);
     mg->Add(gr);
     // TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
