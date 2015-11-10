@@ -108,9 +108,9 @@ TGraphErrors* Opt::Grafico()
 //Faz um histograma
 TH1F* Opt::Histograma()
 {
-  cout << "Eu quero fazer um histograma e nao me deixam." << endl;
+  cout << "Eu quero fazer um histograma e ja me deixam." << endl;
 
-  TH1F *hist = new TH1F("Stats",titulo.c_str(),100,-3,3);
+  TH1F *hist = new TH1F("Stats",titulo.c_str(),100,dim[0],dim[1]);
   return hist;
 
 

@@ -72,6 +72,7 @@ int main(int argc, char **argv)
   {
     TH1F* hist=Decisao->Histograma();
     hist->Draw();
+    c1->Update();
   }
   else if (escolha == "fit")
   {
@@ -81,6 +82,7 @@ int main(int argc, char **argv)
       //cout << "erro de x:" << gr->GetErrorX(i) << " erro de y:" << gr->GetErrorY(i) << endl;
     Decisao->Ajuste(gr);
     mg->Add(gr);
+
     // TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
     // //  TPaveStats *stats2 = (TPaveStats*)gr2->GetListOfFunctions()->FindObject("stats");
     // stats1->SetTextColor(kBlue); 
@@ -91,12 +93,12 @@ int main(int argc, char **argv)
 
   if (escolha !="histograma") {
 
-  vector<int> dim = Decisao->Return_dims();
-  mg->Draw("APE");
-  mg->GetXaxis()->SetLimits(dim[0],dim[1]);
-  mg->SetMinimum(dim[2]);
-  mg->SetMaximum(dim[3]);
-  c1->Update();
+    vector<int> dim = Decisao->Return_dims();
+    mg->Draw("APE");
+    mg->GetXaxis()->SetLimits(dim[0],dim[1]);
+    mg->SetMinimum(dim[2]);
+    mg->SetMaximum(dim[3]);
+    c1->Update();
   }
 
   c1->Modified();
