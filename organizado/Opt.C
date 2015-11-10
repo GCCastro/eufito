@@ -2,6 +2,7 @@
 #include "fstream"
 #include "TF1.h"
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
 //merdas
@@ -108,9 +109,19 @@ TGraphErrors* Opt::Grafico()
 //Faz um histograma
 TH1F* Opt::Histograma()
 {
+  ifstream data(dados.c_str());
   cout << "Eu quero fazer um histograma e ja me deixam." << endl;
+  int nbin=100;
+  TH1F *hist = new TH1F("Stats",titulo.c_str(),nbin,dim[0],dim[1]);
+  while(data.eof()==false)
+  {
+    string point;
+    getline(data,point);
+    hist->Fill(atof(point.c_str()));
+  }
 
-  TH1F *hist = new TH1F("Stats",titulo.c_str(),100,dim[0],dim[1]);
+  data.close();
+
   return hist;
 
 
