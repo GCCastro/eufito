@@ -27,4 +27,5 @@ class Opt
     string titulo;
     vector<int> dim;
     vector<string> mainsender;
+    string nbin;
 };

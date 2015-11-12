@@ -30,8 +30,10 @@ Opt::Opt(string fparam, string fdados)
     getline(det,dim3);
     det.ignore(256,':');
     getline(det,dim4);
-
+    det.ignore(256,':');
+    getline(det,nbin);
   }
+  cout << opcao << endl;
   det.close();
   dim.push_back(atof(dim1.c_str()));
   dim.push_back(atof(dim2.c_str()));
@@ -45,6 +47,7 @@ Opt::Opt(string fparam, string fdados)
 //Decide, baseado na opcao, que grafico fazer; Chama funcao adequada
 vector<string> Opt::Escolher()
 {
+  cout << opcao << endl;
   if ( (opcao!="fit") & (opcao!="grafico") & (opcao!="histograma") )
   {
     opcao.clear();
@@ -111,14 +114,16 @@ TH1F* Opt::Histograma()
 {
   ifstream data(dados.c_str());
   cout << "Eu quero fazer um histograma e ja me deixam." << endl;
-  int nbin=100;
-  TH1F *hist = new TH1F("Stats",titulo.c_str(),nbin,dim[0],dim[1]);
+  TH1F *hist = new TH1F("Stats",titulo.c_str(),atof(nbin.c_str()),dim[0],dim[1]);
+  //TH1F *hist = new TH1F("Stats",titulo.c_str(),8,dim[0],dim[1]); 
   while(data.eof()==false)
   {
     string point;
     getline(data,point);
     hist->Fill(atof(point.c_str()));
   }
+  TF1 *f1 = new TF1("f1",func.c_str());
+  hist->Fit("f1","EMF");
 
   data.close();
 
