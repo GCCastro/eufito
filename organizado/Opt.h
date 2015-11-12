@@ -17,7 +17,7 @@ class Opt
     TH1F* Histograma();
     TGraphErrors* Ajuste(TGraphErrors* gr);
     TGraphErrors* Grafico();
-    vector<int> Return_dims();
+    vector<double> Return_dims();
 
   private:
     string ficheiro;
@@ -25,7 +25,7 @@ class Opt
     string opcao;
     string func;
     string titulo;
-    vector<int> dim;
+    vector<double> dim;
     vector<string> mainsender;
     string numbin;
 };

@@ -4,5 +4,5 @@ func:gaus(0)
 xmin:-4.25
 xmax:4.25
 ymin:0
-ymax:50
-nbin:690
+ymax:1
+nbin:17
