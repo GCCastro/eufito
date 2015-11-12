@@ -31,9 +31,9 @@ Opt::Opt(string fparam, string fdados)
     det.ignore(256,':');
     getline(det,dim4);
     det.ignore(256,':');
-    getline(det,nbin);
+    getline(det,numbin);
   }
-  cout << opcao << endl;
+
   det.close();
   dim.push_back(atof(dim1.c_str()));
   dim.push_back(atof(dim2.c_str()));
@@ -114,8 +114,8 @@ TH1F* Opt::Histograma()
 {
   ifstream data(dados.c_str());
   cout << "Eu quero fazer um histograma e ja me deixam." << endl;
-  TH1F *hist = new TH1F("Stats",titulo.c_str(),atof(nbin.c_str()),dim[0],dim[1]);
-  //TH1F *hist = new TH1F("Stats",titulo.c_str(),8,dim[0],dim[1]); 
+  cout << numbin.c_str() << " " << numbin << endl;
+  TH1F *hist = new TH1F("Stats",titulo.c_str(),atof(numbin.c_str()),dim[0],dim[1]);
   while(data.eof()==false)
   {
     string point;
@@ -124,6 +124,14 @@ TH1F* Opt::Histograma()
   }
   TF1 *f1 = new TF1("f1",func.c_str());
   hist->Fit("f1","EMF");
+  cout << numbin << endl;
+  int j=0;
+  while (j<numbin)
+  {
+    cout << numbin << endl;
+    cout << j << endl;
+    j++;
+  }
 
   data.close();
 
