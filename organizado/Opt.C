@@ -122,7 +122,11 @@ TH1F* Opt::Histograma()
     string point;
     getline(data,point);
     hist->Fill(atof(point.c_str()));
-    erros.push_back(sqrt(atof(point.c_str())));
+  }
+
+  for (int i=0; i<atof(numbin.c_str()); i++)
+  {
+    erros.push_back(hist->GetBinError(i));
   }
 
   cout << hist->Integral() << endl;
@@ -131,10 +135,7 @@ TH1F* Opt::Histograma()
   hist->Fit("f1","EMF");
   for (int i=0; i<atof(numbin.c_str()); i++)
   {
-    cout << erros[i] << endl;
-    cout << hist->GetBinError(i) << endl;
     hist->SetBinError(i,erros[i]/50*0.5);
-    
   }
 
   data.close();

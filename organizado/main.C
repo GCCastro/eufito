@@ -98,7 +98,7 @@ int main(int argc, char **argv)
   if (escolha !="histograma") {
 
     vector<double> dim = Decisao->Return_dims();
-    mg->Draw("APE");
+    mg->Draw("AP");
     mg->GetXaxis()->SetLimits(dim[0],dim[1]);
     mg->SetMinimum(dim[2]);
     mg->SetMaximum(dim[3]);
