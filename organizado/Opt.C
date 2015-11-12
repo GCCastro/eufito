@@ -33,6 +33,7 @@ Opt::Opt(string fparam, string fdados)
     det.ignore(256,':');
     getline(det,numbin);
   }
+  cout << opcao << "  BATATA" << endl;
 
   det.close();
   dim.push_back(atof(dim1.c_str()));
