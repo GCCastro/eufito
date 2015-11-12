@@ -31,9 +31,10 @@ Opt::Opt(string fparam, string fdados)
     det.ignore(256,':');
     getline(det,dim4);
     det.ignore(256,':');
-    getline(det,nbin);
+    getline(det,numbin);
   }
-  cout << opcao << endl;
+  cout << opcao << "  BATATA" << endl;
+
   det.close();
   dim.push_back(atof(dim1.c_str()));
   dim.push_back(atof(dim2.c_str()));
@@ -67,7 +68,7 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
 
   TF1 *f1 = new TF1("f1",func.c_str());
   //  f1->SetParLimits(1,0.000104,0.000107);
-  f1->SetLineColor(kBlue);
+  f1->SetLineColor(kRed);
   gr1->Fit("f1","EMF");
  
  
@@ -89,11 +90,11 @@ TGraphErrors* Opt::Grafico()
 
   gr1->SetName("gr1");
   gr1->SetTitle("graph 1");
-  gr1->SetMarkerStyle(8);
+  gr1->SetMarkerStyle(1);
   gr1->SetMarkerColor(kRed);
   gr1->SetLineWidth(3);
 
-  gr1->SetLineColor(3);
+  gr1->SetLineColor(1);
   gr1->SetLineWidth(0.5);
   gr1->SetFillStyle(1);
 
@@ -114,16 +115,28 @@ TH1F* Opt::Histograma()
 {
   ifstream data(dados.c_str());
   cout << "Eu quero fazer um histograma e ja me deixam." << endl;
-  TH1F *hist = new TH1F("Stats",titulo.c_str(),atof(nbin.c_str()),dim[0],dim[1]);
-  //TH1F *hist = new TH1F("Stats",titulo.c_str(),8,dim[0],dim[1]); 
+  TH1F *hist = new TH1F("Stats",titulo.c_str(),atof(numbin.c_str()),dim[0],dim[1]);
+  
+  vector<double> erros;
   while(data.eof()==false)
   {
     string point;
     getline(data,point);
     hist->Fill(atof(point.c_str()));
+    erros.push_back(sqrt(atof(point.c_str())));
   }
+
+  cout << hist->Integral() << endl;
+  hist->Scale(1/hist->Integral());
   TF1 *f1 = new TF1("f1",func.c_str());
   hist->Fit("f1","EMF");
+  for (int i=0; i<atof(numbin.c_str()); i++)
+  {
+    cout << erros[i] << endl;
+    cout << hist->GetBinError(i) << endl;
+    hist->SetBinError(i,erros[i]/50*0.5);
+    
+  }
 
   data.close();
 
@@ -133,7 +146,7 @@ TH1F* Opt::Histograma()
 }
 
 
-vector<int> Opt::Return_dims()
+vector<double> Opt::Return_dims()
 {
   return dim;
 }
