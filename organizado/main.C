@@ -71,7 +71,8 @@ int main(int argc, char **argv)
   else if (escolha == "histograma")
   {
     TH1F* hist=Decisao->Histograma();
-    hist->Draw("");
+    hist->Draw("EHISTSAME");
+    //hist->Draw("BE1");
     c1->Update();
     //for (int i=0; i<100; i++)
     //{
@@ -99,8 +100,7 @@ int main(int argc, char **argv)
 
     cout << "BATATA" << endl;
     vector<double> dim = Decisao->Return_dims();
-    cout << dim[0] << " " << dim[1] << endl;
-    mg->Draw("APE");
+    mg->Draw("AP");
     mg->GetXaxis()->SetLimits(dim[0],dim[1]);
     mg->SetMinimum(dim[2]);
     mg->SetMaximum(dim[3]);
