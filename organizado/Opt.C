@@ -133,6 +133,7 @@ TH1F* Opt::Histograma()
   cout << hist->Integral() << endl;
   hist->Scale(1/hist->Integral());
   TF1 *f1 = new TF1("f1",func.c_str());
+  f1->SetParameters(0.1,0.001,0.63);
   hist->Fit("f1","EMF");
   for (int i=0; i<atof(numbin.c_str()); i++)
   {
