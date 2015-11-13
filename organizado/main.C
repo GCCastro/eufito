@@ -71,7 +71,7 @@ int main(int argc, char **argv)
   else if (escolha == "histograma")
   {
     TH1F* hist=Decisao->Histograma();
-    hist->Draw("");
+    hist->Draw("BE1");
     c1->Update();
     //for (int i=0; i<100; i++)
     //{
