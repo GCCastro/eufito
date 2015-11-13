@@ -1,6 +1,6 @@
 opcao:histograma
 titulo:Coisas;Nº de contagens;Nº de eventos
-func:1/sqrt(2*3.14159)/[0]*exp(-0.5*((x-[1])/[0])^2)
+func:1/sqrt(2.*3.14159)/[0]*exp(-0.5*((x-[1])/[0])^2)
 xmin:-4.25
 xmax:4.25
 ymin:0
