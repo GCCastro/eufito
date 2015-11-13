@@ -67,7 +67,7 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
   cout << "Eu quero fazer um ajuste e jame deixam." << endl;
 
   TF1 *f1 = new TF1("f1",func.c_str());
-  //  f1->SetParLimits(1,0.000104,0.000107);
+  //f1->SetParLimits(2,1.97,2.01);
   f1->SetLineColor(kRed);
   gr1->Fit("f1","EMF");
  
