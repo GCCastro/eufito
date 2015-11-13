@@ -1,6 +1,6 @@
 opcao:fit
 titulo:Teste Lei Quadrado Inverso ;d(m);Rc(s^-1)
-func:[0]/((x+[1])^2)
+func:[0]/((x+[1])^2) 
 xmin:0
 xmax:0.06
 ymin:0
