@@ -143,7 +143,7 @@ TH1F* Opt::Histograma()
   {
     cout << "Erros" << endl;
     cout << erros[i] << " " << hist->GetBinError(i) << " " << erros[i]/25. << endl;
-    hist->SetBinError(i,erros[i]/25);
+    hist->SetBinError(i,erros[i]/25.);
   }
   hist->Fit("f1","EMF");
   //gfit->GetNDF();
