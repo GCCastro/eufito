@@ -119,11 +119,13 @@ TH1F* Opt::Histograma()
   TH1F *hist = new TH1F("Stats",titulo.c_str(),atof(numbin.c_str()),dim[0],dim[1]);
   
   vector<double> erros;
-  while(data.eof()==false)
+  //while(data.eof()==false)
+  for (int i=0; i<50;i++)
   {
     string point;
     getline(data,point);
     hist->Fill(atof(point.c_str()));
+    cout << point << endl;
   }
 
   for (int i=0; i<atof(numbin.c_str()); i++)
@@ -132,17 +134,20 @@ TH1F* Opt::Histograma()
   }
 
   cout << hist->Integral() << endl;
-  hist->Scale(1/hist->Integral());
+  //hist->Scale(1/hist->Integral());
+  hist->Scale(1/25.);
   TF1 *f1 = new TF1("f1",func.c_str());
   f1->SetParameters(0.1,0.001,0.63);
   //hist->Fit("f1","EMF");
   for (int i=0; i<atof(numbin.c_str()); i++)
   {
-    hist->SetBinError(i,erros[i]/50*0.5);
+    cout << "Erros" << endl;
+    cout << erros[i] << " " << hist->GetBinError(i) << " " << erros[i]/25. << endl;
+    hist->SetBinError(i,erros[i]/25);
   }
   hist->Fit("f1","EMF");
   //gfit->GetNDF();
-  //cout << "Qui-quadrado: " << hist->Chisqdf(f1)/gfit->GetNDF() << endl;
+  //cout << "Qui-quadrado: " << hist->Chisqdf(f1) << endl;
 
   data.close();
 
