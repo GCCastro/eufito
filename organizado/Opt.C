@@ -1,6 +1,7 @@
 #include "Opt.h"
 #include "fstream"
 #include "TF1.h"
+#include "TStyle.h"
 #include <cstdlib>
 #include <iostream>
 
@@ -140,7 +141,8 @@ TH1F* Opt::Histograma()
     hist->SetBinError(i,erros[i]/50*0.5);
   }
   hist->Fit("f1","EMF");
-  cout << "Qui-quadrado: " << hist->Chisquare(f1) << endl;
+  //gfit->GetNDF();
+  //cout << "Qui-quadrado: " << hist->Chisqdf(f1)/gfit->GetNDF() << endl;
 
   data.close();
 
