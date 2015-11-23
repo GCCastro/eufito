@@ -1,5 +1,5 @@
 opcao:histograma
-titulo:Histograma de numero de contagens com ajuste a gaussiana;Numero de contagens;Numero de eventos
+titulo:Histograma normalizado com ajuste a gaussiana;;Numero de eventos;
 func:1/sqrt(2.*3.14159)/[0]*exp(-0.5*((x-[1])/[0])^2)
 xmin:-4.25
 xmax:4.25
