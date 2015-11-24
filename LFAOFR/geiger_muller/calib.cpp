@@ -5,7 +5,7 @@ using namespace std;
 
 void calib()
 {
-  TGraphErrors *gr = new TGraphErrors ("dados_patamar.txt","%lg %lg %lg %lg");
+  TGraphErrors *gr = new TGraphErrors ("dados_norm.txt","%lg %lg %lg %lg");
   gr->Draw();
 
 }
