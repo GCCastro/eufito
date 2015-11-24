@@ -70,7 +70,8 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
   TF1 *f1 = new TF1("f1",func.c_str());
   //f1->SetParLimits(2,1.97,2.01);
   f1->SetLineColor(kRed);
-  gr1->Fit("f1","EX0MF"); //EX0-sem erros no yy
+  f1->SetParameters(1,1);
+  gr1->Fit("f1","MF"); //EX0-sem erros no yy
  
  
 }
