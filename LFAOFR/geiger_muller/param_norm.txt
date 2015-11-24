@@ -4,4 +4,4 @@ func:[0]+x*[1]
 xmin:700
 xmax:1250
 ymin:0.7
-ymax:2
+ymax:1.2
