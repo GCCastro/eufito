@@ -37,7 +37,7 @@ int main(int argc, char **argv)
   TApplication theApp("App", &argc, argv);
   theApp.InitializeGraphics();
   
-  TCanvas *c1 = new TCanvas("c1","Spline",200,10,1000,800);
+  TCanvas *c1 = new TCanvas("c1","Spline",200,10,1100,900);
   c1->SetFillColor(0);
   //c1->SetGrid();
   c1->GetFrame()->SetFillColor(21);
@@ -99,8 +99,8 @@ int main(int argc, char **argv)
   TGraph* g =A.Draw();
   g->SetMarkerStyle(7);
   g->SetTitle("dE/dx em funcao da energia");
-  g->GetXaxis()->SetTitle("E (KeV)");
-  g->GetYaxis()->SetTitle("dE/dx");
+  g->GetXaxis()->SetTitle("E (MeV)");
+  g->GetYaxis()->SetTitle("dE/dx (MeV/cm)");
   g->Draw("AP");
   c1->Update();
   //gr.AddObject(g,"Pad","ap");   
