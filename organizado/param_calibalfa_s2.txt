@@ -1,0 +1,7 @@
+opcao:fit
+titulo:Calibracao alfa segunda sessao;Canais;Tensao(V)
+func:[b]+x*[m]
+xmin:150
+xmax:900
+ymin:0
+ymax:8
