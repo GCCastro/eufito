@@ -3,7 +3,6 @@
 #include "TROOT.h"
 #include "TH1F.h"
 #include "TF1.h"
-#include "cFCgraphics.h"
 #include "DataInterpolator.h"
 #include "Vec.h"
 #include "EqSolver.h"
@@ -16,16 +15,35 @@
 #include "TClass.h"
 #include "TMath.h"
 
+#include "TFrame.h"  //gClient
+#include "TCanvas.h"  //Ecra principal dos graficos
+#include "TPad.h"  //"Subcanvas"
+#include "TFrame.h"  //gClient
+#include "TCanvas.h"  //Ecra principal dos graficos
+#include "TApplication.h"  //Janela
+#include "TAxis.h"  //Eixos dos graficos
+#include "TMultiGraph.h"  //Varios graficos sobrepostos
+#include "TList.h"
+
 using namespace std;
 
-int main()
+int main(int argc, char **argv)
 {
-  cFCgraphics gr;
-  TPad* pad = gr.CreatePad("Pad"); 
   int N=18;
   double x[18];
   double y[18];
 
+  //Janela
+  TApplication theApp("App", &argc, argv);
+  theApp.InitializeGraphics();
+  
+  TCanvas *c1 = new TCanvas("c1","Spline",200,10,1000,800);
+  c1->SetFillColor(0);
+  //c1->SetGrid();
+  c1->GetFrame()->SetFillColor(21);
+  c1->GetFrame()->SetBorderSize(12);
+
+  //Pontos
   x[0]=0.05;
   x[1]=0.08;
   x[2]=0.128;
@@ -76,11 +94,17 @@ int main()
   cout << "Valor da interpolaçao por Cubic Spline em E=57.3 MeV: " << ce << " (mbarn)"<< endl;
   cout << "\nValor da interpolaçao por polinomio em E=57.3 MeV: " << pe << " (mbarn)\n"<< endl;
   */
+
   //alinea b)
   TGraph* g =A.Draw();
   g->SetMarkerStyle(7);
-  //gr.AddObject(g);
-  gr.AddObject(g,"Pad","ap");
+  g->SetTitle("dE/dx em funcao da energia");
+  g->GetXaxis()->SetTitle("E (KeV)");
+  g->GetYaxis()->SetTitle("dE/dx");
+  g->Draw("AP");
+  c1->Update();
+  //gr.AddObject(g,"Pad","ap");   
+
   /*
   TF1* f2=A.Polynomial();
   f2->SetLineColor(kRed+2);
@@ -88,41 +112,23 @@ int main()
   //gr.AddObject(f2);  
   gr.AddObject(f2,"Pad","same");
   */
+
   TF1* function = A.CubicSpline(k);
   function->SetLineColor(kCyan+3);
   function->SetLineWidth(2);
-  //gr.AddObject(function);
-  gr.AddObject(function,"Pad","same");
-  
-  g->SetTitle("dE/dx em funcao da energia");
-  gr.DumpPad("Pad");
-  gr.AddObject(pad);
-
-  /*
-  //alinea c)
-  TGraph* g2= A.InterpolDif(k);
-  g2->SetMarkerStyle(6);
-  gr.AddObject(g2);
-
-  //alinea d)
-  TGraph* g3 =A.CubicDerivDif(k);
-  g3->SetMarkerStyle(6);
-  gr.AddObject(g3);
-
-  //alinea e)
-  TGraph* g4 =A.DerivNDif(k);
-  g4->SetMarkerStyle(6);
-  gr.AddObject(g4);
-  */
+  function->Draw("SAME");
+  c1->Update();
 
   TSpline3 * CuSpl = new TSpline3("Cubic Spline", x, y, N);
   //CuSpl->Draw("SAMECP");
+  
+  c1->Update();
+  c1->Modified();
+  c1->Draw();
+  c1->Print("dEdx.pdf");
+  getchar();
 
-  gr.AddObject(CuSpl);
-
-  gr.Draw();
-  gr.Print("Graphs.pdf");
-
+  theApp.Terminate();
 
   delete [] k;
 
