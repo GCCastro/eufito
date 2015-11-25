@@ -9,6 +9,13 @@
 #include "EqSolver.h"
 #include "TGraph.h"
 
+#include "TSpline.h"
+#include "TVirtualPad.h"
+#include "TSystem.h"
+#include "Riostream.h"
+#include "TClass.h"
+#include "TMath.h"
+
 using namespace std;
 
 int main()
@@ -38,25 +45,24 @@ int main()
   x[16]=6.4;
   x[17]=8.0;
 
-  y[0]=0.5808;
-  y[1]=0.70353;
-  y[2]=0.84073;
-  y[3]=1.02026;
-  y[4]=1.32106;
-  y[5]=1.46384;
-  y[6]=1.61681;
-  y[7]=1.73694;
-  y[8]=1.78912;
-  y[9]=1.73085;
-  y[10]=1.58645;
-  y[11]=1.40949;
-  y[12]=1.25126;
-  y[13]=1.09908;
-  y[14]=0.90826;
-  y[15]=0.75714;
-  y[16]=0.62875;
-  y[17]=0.43924;
-
+  y[0]=0.55686;
+  y[1]=0.6756;
+  y[2]=0.8086;
+  y[3]=0.95054;
+  y[4]=1.29439;
+  y[5]=1.43087;
+  y[6]=1.59182;
+  y[7]=1.71951;
+  y[8]=1.80172;
+  y[9]=1.75752;
+  y[10]=1.62341;
+  y[11]=1.44267;
+  y[12]=1.27835;
+  y[13]=1.14066;
+  y[14]=0.93871;
+  y[15]=0.78444;
+  y[16]=0.64891;
+  y[17]=0.55054;
 
   DataInterpolator A((int)18,x,y);
 
@@ -72,7 +78,7 @@ int main()
   */
   //alinea b)
   TGraph* g =A.Draw();
-  g->SetMarkerStyle(6);
+  g->SetMarkerStyle(7);
   //gr.AddObject(g);
   gr.AddObject(g,"Pad","ap");
   /*
@@ -108,8 +114,15 @@ int main()
   g4->SetMarkerStyle(6);
   gr.AddObject(g4);
   */
+
+  TSpline3 * CuSpl = new TSpline3("Cubic Spline", x, y, N);
+  //CuSpl->Draw("SAMECP");
+
+  gr.AddObject(CuSpl);
+
   gr.Draw();
   gr.Print("Graphs.pdf");
+
 
   delete [] k;
 
