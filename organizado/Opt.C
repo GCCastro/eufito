@@ -71,7 +71,7 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
   //f1->SetParLimits(2,1.97,2.01);
   f1->SetLineColor(kRed);
   f1->SetParameters(1,1);
-  gr1->Fit("f1","MF"); //EX0-sem erros no yy
+  gr1->Fit("f1","MF"); //EY0-sem erros no yy //Desnecessario, basta por colunas de 0 no ey
  
  
 }
