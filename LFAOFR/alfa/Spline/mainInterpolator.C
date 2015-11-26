@@ -121,31 +121,38 @@ int main(int argc, char **argv)
   double d1=0.95,d2=1.75,d3=2.55,df=3.35;
   double Ef=5.305;
   double step=.01;
-  int iter,i1,i2,i3;
 
-  iter=(int) (df/step);
-  i1=(int) (d1/step);
-  i2=(int) (d2/step);
-  i3=(int) (d3/step);
+  /*
+  TSpline3 * CuSpl = new TSpline3("Cubic Spline", x, y, N);
+  CuSpl->Draw("SAMECP");
+  */
 
-  cout << "\n" << i1 << " " << i2 << " " << i3 << endl; 
-
-  for(int i=1;i<=iter;++i)
+  for(double i=step;i<=df;i=i+step)
     {
       double mtemp;
       mtemp=function->Eval(Ef);
+      //mtemp=CuSpl->Eval(Ef);
       
       Ef=Ef-mtemp*step;
 
-      //cout << i*step << endl;
-      
-      if((i==i1) || (i==i2) || (i==i3) || (i==iter))
-	cout << "\n Energia: " << Ef << " distance: " << i << endl;
+      if(fabs(i-d1)<step/2)
+	{ 
+	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	}
+      else if(fabs(i-d2)<step/2)
+	{
+	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	}
+      else if(fabs(i-d3)<step/2)
+	{
+	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	}
+      else if(fabs(i-df)<step/2)
+	{
+	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	}
 
     }
-
-  //TSpline3 * CuSpl = new TSpline3("Cubic Spline", x, y, N);
-  //CuSpl->Draw("SAMECP");
   
   c1->Update();
   c1->Modified();
