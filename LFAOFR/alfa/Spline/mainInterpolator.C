@@ -7,6 +7,7 @@
 #include "Vec.h"
 #include "EqSolver.h"
 #include "TGraph.h"
+#include "TLatex.h"
 
 #include "TSpline.h"
 #include "TVirtualPad.h"
@@ -37,7 +38,7 @@ int main(int argc, char **argv)
   TApplication theApp("App", &argc, argv);
   theApp.InitializeGraphics();
   
-  TCanvas *c1 = new TCanvas("c1","Spline",200,10,1100,900);
+  TCanvas *c1 = new TCanvas("c1","Spline",200,10,1280,720);
   c1->SetFillColor(0);
   //c1->SetGrid();
   c1->GetFrame()->SetFillColor(21);
@@ -98,7 +99,7 @@ int main(int argc, char **argv)
   g->SetMarkerStyle(7);
   g->SetTitle("dE/dx em funcao da energia");
   g->GetXaxis()->SetTitle("E (MeV)");
-  g->GetYaxis()->SetTitle("dE/dx (MeV/mg/cm^2)");
+  g->GetYaxis()->SetTitle(" #frac{dE}{dx} (MeV/mg/cm^{2})  ");
   g->Draw("AP");
   c1->Update();
 
