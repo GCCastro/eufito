@@ -98,7 +98,7 @@ int main(int argc, char **argv)
   g->SetMarkerStyle(7);
   g->SetTitle("dE/dx em funcao da energia");
   g->GetXaxis()->SetTitle("E (MeV)");
-  g->GetYaxis()->SetTitle("dE/dx (MeV/cm)");
+  g->GetYaxis()->SetTitle("dE/dx (MeV/mg/cm^2)");
   g->Draw("AP");
   c1->Update();
 
@@ -118,16 +118,17 @@ int main(int argc, char **argv)
 
   cout << "\n Valor da funçao eval: " << function->Eval(4.5) << endl;
 
+  double ro25=1.1839, ro20=1.2041;
   double d1=0.95,d2=1.75,d3=2.55,df=3.35;
   double Ef=5.305;
-  double step=.01;
+  double step=.05*ro25;
 
   /*
   TSpline3 * CuSpl = new TSpline3("Cubic Spline", x, y, N);
   CuSpl->Draw("SAMECP");
   */
 
-  for(double i=step;i<=df;i=i+step)
+  for(double i=step;i<=ro25*df;i=i+step)
     {
       double mtemp;
       mtemp=function->Eval(Ef);
@@ -135,21 +136,21 @@ int main(int argc, char **argv)
       
       Ef=Ef-mtemp*step;
 
-      if(fabs(i-d1)<step/2)
+      if(fabs(i-ro25*d1)<step/2)
 	{ 
-	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i/ro25 << endl;
 	}
-      else if(fabs(i-d2)<step/2)
+      else if(fabs(i-ro25*d2)<step/2)
 	{
-	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i/ro25 << endl;
 	}
-      else if(fabs(i-d3)<step/2)
+      else if(fabs(i-ro25*d3)<step/2)
 	{
-	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i/ro25 << endl;
 	}
-      else if(fabs(i-df)<step/2)
+      else if(fabs(i-ro25*df)<step/2)
 	{
-	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i/ro25 << endl;
 	}
 
     }
