@@ -72,6 +72,10 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
   f1->SetLineColor(kRed);
   f1->SetParameters(1,1);
   gr1->Fit("f1","MF"); //EY0-sem erros no yy //Desnecessario, basta por colunas de 0 no ey
+
+  cout << gr1->GetErrorY(0) << " " << gr1->GetErrorY(1) << " " << gr1->GetErrorY(2) << " " << gr1->GetErrorY(3) << endl;
+  cout << gr1->GetErrorX(0) << " " << gr1->GetErrorX(1) << " " << gr1->GetErrorX(2) << " " << gr1->GetErrorX(3) << endl;
+
  
  
 }
