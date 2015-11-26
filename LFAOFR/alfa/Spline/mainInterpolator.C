@@ -7,6 +7,7 @@
 #include "Vec.h"
 #include "EqSolver.h"
 #include "TGraph.h"
+#include "TLatex.h"
 
 #include "TSpline.h"
 #include "TVirtualPad.h"
@@ -37,7 +38,7 @@ int main(int argc, char **argv)
   TApplication theApp("App", &argc, argv);
   theApp.InitializeGraphics();
   
-  TCanvas *c1 = new TCanvas("c1","Spline",200,10,1100,900);
+  TCanvas *c1 = new TCanvas("c1","Spline",200,10,1280,720);
   c1->SetFillColor(0);
   //c1->SetGrid();
   c1->GetFrame()->SetFillColor(21);
@@ -86,19 +87,20 @@ int main(int argc, char **argv)
 
   double* k=new double[N];
   k=A.CubicSplineCurvatures();  
-  
+  /* 
   //alinea a)
   double ce;
   ce=A.CSEvaluate(k,4.5);
  
   cout << "\n Valor da interpolaçao por Cubic Spline em E= MeV: " << ce << " (mbarn)"<< endl;
+  */
 
   //alinea b)
   TGraph* g =A.Draw();
   g->SetMarkerStyle(7);
   g->SetTitle("dE/dx em funcao da energia");
   g->GetXaxis()->SetTitle("E (MeV)");
-  g->GetYaxis()->SetTitle("dE/dx (MeV/cm)");
+  g->GetYaxis()->SetTitle(" #frac{dE}{dx} (MeV/mg/cm^{2})  ");
   g->Draw("AP");
   c1->Update();
 
@@ -116,18 +118,19 @@ int main(int argc, char **argv)
   function->Draw("SAME");
   c1->Update();
 
-  cout << "\n Valor da funçao eval: " << function->Eval(4.5) << endl;
+  //cout << "\n Valor da funçao eval: " << function->Eval(4.5) << endl;
 
+  double ro25=1.1839, ro20=1.2041;
   double d1=0.95,d2=1.75,d3=2.55,df=3.35;
   double Ef=5.305;
-  double step=.01;
+  double step=.05*ro20;
 
   /*
   TSpline3 * CuSpl = new TSpline3("Cubic Spline", x, y, N);
   CuSpl->Draw("SAMECP");
   */
 
-  for(double i=step;i<=df;i=i+step)
+  for(double i=step;i<=ro20*df;i=i+step)
     {
       double mtemp;
       mtemp=function->Eval(Ef);
@@ -135,21 +138,21 @@ int main(int argc, char **argv)
       
       Ef=Ef-mtemp*step;
 
-      if(fabs(i-d1)<step/2)
+      if(fabs(i-ro20*d1)<step/2)
 	{ 
-	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	  cout << "\n **Prateleira 1** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
-      else if(fabs(i-d2)<step/2)
+      else if(fabs(i-ro20*d2)<step/2)
 	{
-	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	  cout << "\n **Prateleira 2** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
-      else if(fabs(i-d3)<step/2)
+      else if(fabs(i-ro20*d3)<step/2)
 	{
-	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	  cout << "\n **Prateleira 3** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
-      else if(fabs(i-df)<step/2)
+      else if(fabs(i-ro20*df)<step/2)
 	{
-	  cout << "\n delta E: " << 5.305-Ef << " distance: " << i << endl;
+	  cout << "\n **Prateleira 4** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
 
     }
