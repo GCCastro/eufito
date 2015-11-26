@@ -123,14 +123,14 @@ int main(int argc, char **argv)
   double ro25=1.1839, ro20=1.2041;
   double d1=0.95,d2=1.75,d3=2.55,df=3.35;
   double Ef=5.305;
-  double step=.05*ro25;
+  double step=.05*ro20;
 
   /*
   TSpline3 * CuSpl = new TSpline3("Cubic Spline", x, y, N);
   CuSpl->Draw("SAMECP");
   */
 
-  for(double i=step;i<=ro25*df;i=i+step)
+  for(double i=step;i<=ro20*df;i=i+step)
     {
       double mtemp;
       mtemp=function->Eval(Ef);
@@ -138,21 +138,21 @@ int main(int argc, char **argv)
       
       Ef=Ef-mtemp*step;
 
-      if(fabs(i-ro25*d1)<step/2)
+      if(fabs(i-ro20*d1)<step/2)
 	{ 
-	  cout << "\n **Prateleira 1** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro25 << endl;
+	  cout << "\n **Prateleira 1** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
-      else if(fabs(i-ro25*d2)<step/2)
+      else if(fabs(i-ro20*d2)<step/2)
 	{
-	  cout << "\n **Prateleira 2** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro25 << endl;
+	  cout << "\n **Prateleira 2** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
-      else if(fabs(i-ro25*d3)<step/2)
+      else if(fabs(i-ro20*d3)<step/2)
 	{
-	  cout << "\n **Prateleira 3** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro25 << endl;
+	  cout << "\n **Prateleira 3** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
-      else if(fabs(i-ro25*df)<step/2)
+      else if(fabs(i-ro20*df)<step/2)
 	{
-	  cout << "\n **Prateleira 4** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro25 << endl;
+	  cout << "\n **Prateleira 4** delta E: " << 5.305-Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
 
     }
