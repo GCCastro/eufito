@@ -86,14 +86,12 @@ int main(int argc, char **argv)
 
   double* k=new double[N];
   k=A.CubicSplineCurvatures();  
-  /*
+  
   //alinea a)
-  double ce,pe;
-  ce=A.CSEvaluate(k,57.3);
-  pe=A.PEvaluate(57.3);
-  cout << "Valor da interpolaçao por Cubic Spline em E=57.3 MeV: " << ce << " (mbarn)"<< endl;
-  cout << "\nValor da interpolaçao por polinomio em E=57.3 MeV: " << pe << " (mbarn)\n"<< endl;
-  */
+  double ce;
+  ce=A.CSEvaluate(k,4.5);
+ 
+  cout << "\n Valor da interpolaçao por Cubic Spline em E= MeV: " << ce << " (mbarn)"<< endl;
 
   //alinea b)
   TGraph* g =A.Draw();
@@ -103,7 +101,6 @@ int main(int argc, char **argv)
   g->GetYaxis()->SetTitle("dE/dx (MeV/cm)");
   g->Draw("AP");
   c1->Update();
-  //gr.AddObject(g,"Pad","ap");   
 
   /*
   TF1* f2=A.Polynomial();
@@ -119,7 +116,35 @@ int main(int argc, char **argv)
   function->Draw("SAME");
   c1->Update();
 
-  TSpline3 * CuSpl = new TSpline3("Cubic Spline", x, y, N);
+  cout << "\n Valor da funçao eval: " << function->Eval(4.5) << endl;
+
+  double d1=0.95,d2=1.75,d3=2.55,df=3.35;
+  double Ef=5.305;
+  double step=.01;
+  int iter,i1,i2,i3;
+
+  iter=(int) (df/step);
+  i1=(int) (d1/step);
+  i2=(int) (d2/step);
+  i3=(int) (d3/step);
+
+  cout << "\n" << i1 << " " << i2 << " " << i3 << endl; 
+
+  for(int i=1;i<=iter;++i)
+    {
+      double mtemp;
+      mtemp=function->Eval(Ef);
+      
+      Ef=Ef-mtemp*step;
+
+      //cout << i*step << endl;
+      
+      if((i==i1) || (i==i2) || (i==i3) || (i==iter))
+	cout << "\n Energia: " << Ef << " distance: " << i << endl;
+
+    }
+
+  //TSpline3 * CuSpl = new TSpline3("Cubic Spline", x, y, N);
   //CuSpl->Draw("SAMECP");
   
   c1->Update();
