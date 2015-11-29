@@ -140,19 +140,19 @@ int main(int argc, char **argv)
 
       if(fabs(i-ro20*d1)<step/2)
 	{ 
-	  cout << "\n **Prateleira 2** delta E: " << 5.305-Ef << " (MeV) dE/dx:" << function->Eval(Ef) << " distance: " << i/ro20 << endl;
+	  cout << "\n **Prateleira 2** delta E: " << 5.305-Ef << " (MeV) Energia:" << Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
       else if(fabs(i-ro20*d2)<step/2)
 	{
-	  cout << "\n **Prateleira 4** delta E: " << 5.305-Ef << " (MeV) dE/dx:" << function->Eval(Ef) << " distance: " << i/ro20 << endl;
+	  cout << "\n **Prateleira 4** delta E: " << 5.305-Ef << " (MeV) Energia:" << Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
       else if(fabs(i-ro20*d3)<step/2)
 	{
-	  cout << "\n **Prateleira 6** delta E: " << 5.305-Ef << " (MeV) dE/dx:" << function->Eval(Ef) << " distance: " << i/ro20 << endl;
+	  cout << "\n **Prateleira 6** delta E: " << 5.305-Ef << " (MeV) Energia:" << Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
       else if(fabs(i-ro20*df)<step/2)
 	{
-	  cout << "\n **Prateleira 8** delta E: " << 5.305-Ef << " (MeV) dE/dx:" << function->Eval(Ef) << " distance: " << i/ro20 << endl;
+	  cout << "\n **Prateleira 8** delta E: " << 5.305-Ef << " (MeV) Energia:" << Ef << " (MeV) distance: " << i/ro20 << endl;
 	}
 
     }
