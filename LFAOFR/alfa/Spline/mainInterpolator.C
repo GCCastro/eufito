@@ -123,7 +123,7 @@ int main(int argc, char **argv)
   double ro25=1.1839, ro20=1.2041;
   double d1=0.95,d2=1.75,d3=2.55,df=3.35;
   double Ef=5.305;
-  double step=.05*ro20;
+  double step=.0005*ro20;
 
   /*
   TSpline3 * CuSpl = new TSpline3("Cubic Spline", x, y, N);

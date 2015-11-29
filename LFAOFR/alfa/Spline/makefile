@@ -23,7 +23,7 @@ clean:
 	rm -f *.o libTrab2.a
 
 Interpolator:libTrab2.a
-	g++ -o mainInterpolator.exe mainInterpolator.o DataInterpolator.o Vec.o EqSolver.o -I ~/SVN/FC/LIBs -L ~/SVN/FC/LIBs -lFC_x86_64 $(MDFLAGS)
+	g++ -o mainInterpolator.exe mainInterpolator.o DataInterpolator.o Vec.o EqSolver.o -I $(MDFLAGS)
 mainInterpolator.o:
 	g++ -c mainInterpolator.C  `root-config --cflags --glibs`
 DataInterpolator.o:
