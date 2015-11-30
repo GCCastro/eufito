@@ -118,7 +118,10 @@ int main(int argc, char **argv)
   function->Draw("SAME");
   c1->Update();
 
-  //cout << "\n Valor da funçao eval: " << function->Eval(5.305) << endl;
+  cout << "\n Valor da funçao eval: " << function->Eval(4.199670269) << endl;
+  cout << "\n Valor da funçao eval: " << function->Eval(3.3271669466) << endl;
+  cout << "\n Valor da funçao eval: " << function->Eval(2.3425933358) << endl;
+  cout << "\n Valor da funçao eval: " << function->Eval(0.8841422708) << endl;
 
   double ro25=1.1839, ro20=1.2041;
   double d1=0.95,d2=1.75,d3=2.55,df=3.35;
