@@ -1,7 +1,0 @@
-opcao:fit
-titulo:Calibracao;Canais;Tensao(V)
-func:[0]+x*[1]
-xmin:150
-xmax:900
-ymin:4.2
-ymax:7

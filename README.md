@@ -17,7 +17,7 @@ para executar escrever ./fitter.exe detalhes.txt dados.txt
 
 main.C:
 para compilar basta escrever make
-para executar escrever /.main param.txt dados.txt
+para executar escrever ./main.exe param.txt dados.txt
 
 
 2.1. fitter
