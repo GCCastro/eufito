@@ -73,7 +73,7 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
   f1->SetParameters(1,0.001,1000,800,10);
   f1->SetParLimits(4,0,100000);
   //f1->SetParLimits(3,810,830);
-  gr1->Fit("f1","MF","",450.,1024.);
+  gr1->Fit("f1","MF","",600.,1024.);
 
   cout << gr1->GetErrorY(0) << " " << gr1->GetErrorY(1) << " " << gr1->GetErrorY(2) << " " << gr1->GetErrorY(3) << endl;
   cout << gr1->GetErrorX(0) << " " << gr1->GetErrorX(1) << " " << gr1->GetErrorX(2) << " " << gr1->GetErrorX(3) << endl;
