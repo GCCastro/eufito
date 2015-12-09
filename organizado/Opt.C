@@ -70,8 +70,8 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
   TF1 *f1 = new TF1("f1",func.c_str());
 
 
-  f1->SetParameters(1,0.001,1000,800,10);
-  f1->SetParLimits(4,0,100000);
+  // f1->SetParameters(1,0.001,1000,800,10);
+  //f1->SetParLimits(4,0,100000);
   //f1->SetParLimits(3,810,830);
   gr1->Fit("f1","MF","",300.,600.);
 
