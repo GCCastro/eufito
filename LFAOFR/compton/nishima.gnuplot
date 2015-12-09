@@ -22,10 +22,12 @@ z=13
 a=1.29550178492553
 c=8.38713647899768e-29
 
-f(x)=(1/c)*z*(r**2)*(1/(1+a*(1-cos(x))))**2*((1+cos(x)**2)/2)*(1+(a**2)*(1-cos(x))**2/((1+cos(x)**2)*(1+a*(1-cos(x)))))
-g(x)=(1/c)*z*r**2*(1+cos(x)**2)/2
+f(x)=z*(r**2)*(1/(1+a*(1-cos(x))))**2*((1+cos(x)**2)/2)*(1+(a**2)*(1-cos(x))**2/((1+cos(x)**2)*(1+a*(1-cos(x)))))
+f2(x)=f(x)/f(20*pi/180)
+g(x)=(1/c)*z*(r**2)*(1+cos(x)**2)/2
+g2(x)=g(x)/g(20*pi/180)
 
-plot 'sec_dif.txt' using ($1*pi/180):($2):($3) pt 0 ps 1 with yerrorbars title "Pontos experimentais", g(x) title 'Thomson', f(x) title 'Klein-Nishima'
+plot 'sec_dif.txt' using ($1*pi/180):($2):($3) pt 0 ps 1 with yerrorbars title "Pontos experimentais", g2(x) title 'Thomson', f2(x) title 'Klein-Nishima'
 
 
 #print "declive"
