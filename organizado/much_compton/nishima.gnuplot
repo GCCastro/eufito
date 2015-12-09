@@ -9,8 +9,8 @@ set linetype 1 lw 2 lc rgb "blue" pointtype 7 ps 0.5
 
 #fit f(x) 'calib_ind.txt' using 1:($2-$3):(0.001):(1) xyerrors via a,b
 
-set xlabel "{/Symbol a}"
-set ylabel "cenas"
+set xlabel "{/Symbol q}"
+set ylabel "(d{/Symbol s}/d{/Symbol q})/(d{/Symbol s}/d{/Symbol q})_{20}"
 
 set xrange [0:2]
 set yrange [0:2]
