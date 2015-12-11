@@ -13,6 +13,7 @@
 #include <TList.h>  //Nao sei, alguem diga alguma coisa
 #include <TPad.h>  //Quem e que pos isto aqui, esta la em cima...
 #include <TH1.h>  //Classe base dos histogramas
+#include "TLatex.h"
 
 //Header's nao de ROOT
 #include <iostream>  //Porque razoes
