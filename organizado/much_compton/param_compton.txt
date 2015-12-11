@@ -4,4 +4,4 @@ func:[0]*exp(-[1]*x)+[2]/sqrt(2*TMath::Pi())/[4]*exp(-0.5*((x-[3])/[4])^2)
 xmin:0
 xmax:1024
 ymin:0
-ymax:100
+ymax:150
