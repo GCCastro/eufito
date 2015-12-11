@@ -42,13 +42,20 @@ C50C
 N = 857.368 +- 52.2075
 mu = 619.109 +- 2.46392
 sigma = 41.5145 +- 2.42828
+centroide inicial: 
+regiao:
 
-C70C
+C70C Esta a dar diferente!
 N = 958.515 +- 85.3540
 mu = 488.330 +- 2.48676
 sigma = 33.8753 +- 2.79948
+centroide inicial: 500.
+regiao: 250-650
 
 C90C
 N = 1879.31   120.741
 mu = 407.248 +- 1.16345
 sigma = 23.1502 +- 1.36573
+centroide inicial: 400
+regiao: 200-500
+
