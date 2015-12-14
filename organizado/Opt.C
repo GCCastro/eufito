@@ -68,12 +68,16 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
   cout << "Eu quero fazer um ajuste e jame deixam." << endl;
 
   TF1 *f1 = new TF1("f1",func.c_str());
+  f1->SetLineColor(kGray+.5);
+  f1->SetLineWidth(3);
 
-
-  f1->SetParameters(1,0.001,1000,900.,10);
+  f1->SetParameters(1,0.001,1000,400.,10);
   //f1->SetParLimits(4,0,100000);
   //f1->SetParLimits(3,810,830);
-  gr1->Fit("f1","MF","",500.,1024.);
+  gr1->Fit("f1","MF","",200.,500.);
+  
+  gr1->SetMarkerColor(kBlack);
+  gr1->SetLineColor(kBlack);
 
   cout << gr1->GetErrorY(0) << " " << gr1->GetErrorY(1) << " " << gr1->GetErrorY(2) << " " << gr1->GetErrorY(3) << endl;
   cout << gr1->GetErrorX(0) << " " << gr1->GetErrorX(1) << " " << gr1->GetErrorX(2) << " " << gr1->GetErrorX(3) << endl;
