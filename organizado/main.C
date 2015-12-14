@@ -89,12 +89,10 @@ int main(int argc, char **argv)
     Decisao->Ajuste(gr);
     mg->Add(gr);
 
-    // TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
-    // //  TPaveStats *stats2 = (TPaveStats*)gr2->GetListOfFunctions()->FindObject("stats");
-    //   stats1->SetTextColor(kBlue); 
-    // //   stats2->SetTextColor(kRed); 
-    //  stats1->SetX1NDC(0.7); stats1->SetX2NDC(0.9); stats1->SetY1NDC(0.1); stats1->SetY2NDC(0.3);
-    // //  stats2->SetX1NDC(0.3); stats2->SetX2NDC(0.5); stats2->SetY1NDC(0.8);
+    //gPad->Update();
+
+    //TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
+    //stats1->SetX1NDC(0.7); stats1->SetY1NDC(0.9);
   }
 
   if (escolha !="histograma") {
