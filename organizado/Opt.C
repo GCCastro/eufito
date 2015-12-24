@@ -72,10 +72,10 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
   f1->SetLineWidth(2);
 
   //f1->SetParameters(0.001,0.004);
-  f1->SetParameters(1,0.001,8000,210.,10);
+  f1->SetParameters(1,0.001,8000,118.,10);
   //f1->SetParLimits(4,0,100000);
   //f1->SetParLimits(3,95.,110.);
-  gr1->Fit("f1","MF","",200.,215.);
+  gr1->Fit("f1","MF","",110.,121.);
   
   gr1->SetMarkerColor(kRed);
   gr1->SetMarkerStyle(7);
