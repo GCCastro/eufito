@@ -104,8 +104,8 @@ TGraphErrors* Opt::Grafico()
 
   gr1->SetName("gr1");
   gr1->SetTitle("graph 1");
-  gr1->SetMarkerStyle(1);
-  gr1->SetMarkerColor(kRed);
+  gr1->SetMarkerStyle(6);
+  gr1->SetMarkerColor(kBlack);
   gr1->SetLineWidth(3);
 
   gr1->SetLineColor(1);
