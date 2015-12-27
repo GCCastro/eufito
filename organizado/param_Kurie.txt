@@ -1,6 +1,6 @@
 opcao:fit
 titulo:Grafico de Kurie;Energia (keV);raiz de cenas, adimensional
-func:[0]+x*[1]
+func:[1]*([0]-x)
 xmin:300
 xmax:800
 ymin:0
