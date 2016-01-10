@@ -87,12 +87,14 @@ int main(int argc, char **argv)
     for(int i=0; i<=19; i++)
       //cout << "erro de x:" << gr->GetErrorX(i) << " erro de y:" << gr->GetErrorY(i) << endl;
     Decisao->Ajuste(gr);
+    gr->Draw();
     mg->Add(gr);
 
-    //gPad->Update();
+    gPad->Update();
 
-    //TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
-    //stats1->SetX1NDC(0.7); stats1->SetY1NDC(0.9);
+    TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
+    stats1->SetX1NDC(0.7); stats1->SetY1NDC(0.7);
+
   }
 
   if (escolha !="histograma") {
