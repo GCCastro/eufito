@@ -22,6 +22,7 @@ void spline()
   }
 
   TGraph *gr = new TGraph("Fermi.txt","%lg" "%lg");
+  gr->SetMarkerStyle(7);
   TSpline3 *spl = new TSpline3("splinelinda",gr);
 
   gr->Draw();
