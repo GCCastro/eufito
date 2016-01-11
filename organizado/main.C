@@ -95,7 +95,7 @@ int main(int argc, char **argv)
     TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
     stats1->SetX1NDC(.6); 
     stats1->SetX2NDC(.85);
-    stats1->SetY1NDC(0.2);
+    stats1->SetY1NDC(0.7);
     stats1->SetY2NDC(0.4);
 
   }
