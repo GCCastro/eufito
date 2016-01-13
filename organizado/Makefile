@@ -22,9 +22,9 @@ SRC3= main.C Opt.C
 OBJ3= $(SRC3:.C=.o)
 EXE3= main.exe
 
-SRC4= graf.C
+SRC4= calib.C
 OBJ4= $(SRC4:.C=.o)
-EXE4= graf.exe
+EXE4= calib.exe
 
 
 ##Routines
