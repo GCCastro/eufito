@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {portuguese}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o te\IeC {\'o}rica}{2}{0}{1}
+\beamer@sectionintoc {2}{Calibra\IeC {\c c}\IeC {\~a}o}{4}{0}{2}
+\beamer@sectionintoc {3}{Endpoint de $\ce {^{204}_{81}Tl}$}{7}{0}{3}
