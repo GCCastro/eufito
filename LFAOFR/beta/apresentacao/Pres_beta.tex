@@ -1,18 +1,30 @@
-\documentclass{beamer}
-\usepackage[latin1,utf8]{inputenc}
-\usepackage[portuguese]{babel}
-\usepackage{color}
-\usepackage{verbatim}
-\usepackage{graphics,epsfig,subfigure}
-\usepackage{url}
-\usepackage{mhchem}
-\usepackage{floatrow}
+\documentclass[10pt]{beamer}
+\usepackage[portuges]{babel}% Para adicionar a língua (PT)
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{caption}
+\usepackage{subcaption}
+
 
 \usetheme{default}
 \usecolortheme{dove}
 \title[LFAOFR]{Espectroscopia $\beta$}
-\author{Gonçalo Castro}
-\institute{IST}
+\institute{
+Instituto Superior Técnico\\
+\and
+\inst{1} \tiny 78497 \; \inst{2} \tiny 78653 \; \inst{3} \tiny 78850 \; \inst{3} \tiny 78889 \\
+}
+\setbeamercovered{transparent}
+\subtitle{\small \color{black} Mestrado em Engenharia Física Tecnológica\\
+\footnotesize \color{black} LFAOFR}
+\author{
+Gonçalo Castro \inst{1}, António Costa \inst{2}, Miguel Gonçalves \inst{3}, Pedro Pereira \inst{4}
+}
+
 \date{\today}
 
 \begin{document}
@@ -22,23 +34,54 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introdução teórica}
 
-\begin{frame}\frametitle{Decaimento $\beta$}\framesubtitle{Introdução teórica}
+\begin{frame}
+\frametitle{Decaimento $\beta$}
 
+\begin{center}
+$n \rightarrow p + e^{-} + \overline{\nu_{e}}$ 
+\end{center}
 
+\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.3]{cs.png}
+\caption{Esquema Decaimento \ce{^{137}_{55}Cs}}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.3]{tl.png}
+\caption{Esquema Decaimento \ce{^{204}_{81}Tl}}
+  \label{fig:sub2}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.3]{bi.png}
+\caption{Esquema Decaimento \ce{^{207}_{83}Bi}}
+  \label{fig:sub1}
+\end{subfigure}
+\label{fig:test}
+\end{figure}
 
 \end{frame}
 
-\begin{frame}\frametitle{Conversão electrónica e electrões de Auger}\framesubtitle{Introdução teórica}
+\begin{frame}
+\frametitle{Decaimento $\beta$}
 
-
+\begin{equation}
+E_{e^-}=E_{X} -E_{L_{j}}
+\label{Ee}
+\end{equation}
 
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Calibração}
-\begin{frame}\frametitle{Espectro de $\ce{^{137}_{55}Cs}$}\framesubtitle{Calibração}
+\begin{frame}
+
+\frametitle{Espectro de $\ce{^{137}_{55}Cs}$}\framesubtitle{Calibração}
 
    \centering
    \includegraphics[scale=0.25]{esplincs.pdf}

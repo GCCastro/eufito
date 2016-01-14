@@ -1,2 +1,10 @@
+\beamer@slide {fig:sub1}{2}
+\beamer@slide {sub@fig:sub1}{2}
+\beamer@slide {fig:sub2}{2}
+\beamer@slide {sub@fig:sub2}{2}
+\beamer@slide {fig:sub1}{2}
+\beamer@slide {sub@fig:sub1}{2}
+\beamer@slide {fig:test}{2}
+\beamer@slide {Ee}{3}
 \beamer@slide {centroide}{5}
 \beamer@slide {e_centroide}{5}
