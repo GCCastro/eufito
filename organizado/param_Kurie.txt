@@ -1,5 +1,5 @@
 opcao:fit
-titulo:Grafico de Kurie;Energia (keV);raiz de cenas, adimensional
+titulo:Grafico de Kurie;Energia (keV);#frac{1}{W}#sqrt{#frac{N}{G}}(adimensional)
 func:[1]*([0]-x)
 xmin:300
 xmax:800
