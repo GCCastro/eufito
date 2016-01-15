@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.17)  15 JAN 2016 01:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.5)  15 JAN 2016 10:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -918,140 +918,344 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count155
 \c@subtable=\count156
 )
-(/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemedove.sty
+(/usr/share/texlive/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2014/02/01 v3.15 for typesetting chemical formulae
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count157
+\calc@Bcount=\count158
+\calc@Adimen=\dimen193
+\calc@Bdimen=\dimen194
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count159
+\calc@Cskip=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/twoopt.sty
+Package: twoopt 2008/08/11 v1.5 Definitions with two optional arguments (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3names.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
+Package: l3bootstrap 2014/01/04 v4640 L3 Experimental bootstrap code
+)
+Package: l3names 2014/01/04 v4640 L3 Namespace for primitives
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count160
+)
+Package: expl3 2014/01/07 v4646 L3 Experimental code bundle wrapper
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3basics.sty
+Package: l3basics 2014/01/04 v4642 L3 Basic definitions
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3expan.sty
+Package: l3expan 2014/01/04 v4642 L3 Argument expansion
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3tl.sty
+Package: l3tl 2013/12/27 v4625 L3 Token lists
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3seq.sty
+Package: l3seq 2013/12/14 v4623 L3 Sequences and stacks
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3int.sty
+Package: l3int 2013/08/02 v4583 L3 Integers
+\c_max_int=\count161
+\l_tmpa_int=\count162
+\l_tmpb_int=\count163
+\g_tmpa_int=\count164
+\g_tmpb_int=\count165
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3quark.sty
+Package: l3quark 2013/12/14 v4623 L3 Quarks
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prg.sty
+Package: l3prg 2014/01/04 v4642 L3 Control structures
+\g__prg_map_int=\count166
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3clist.sty
+Package: l3clist 2013/07/28 v4581 L3 Comma separated lists
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3token.sty
+Package: l3token 2013/08/25 v4587 L3 Experimental token manipulation
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prop.sty
+Package: l3prop 2013/12/14 v4623 L3 Property lists
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3msg.sty
+Package: l3msg 2013/07/28 v4581 L3 Messages
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3file.sty
+Package: l3file 2013/10/13 v4596 L3 File and I/O operations
+\l_iow_line_count_int=\count167
+\l__iow_target_count_int=\count168
+\l__iow_current_line_int=\count169
+\l__iow_current_word_int=\count170
+\l__iow_current_indentation_int=\count171
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty
+Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
+\c_zero_dim=\dimen195
+\c_max_dim=\dimen196
+\l_tmpa_dim=\dimen197
+\l_tmpb_dim=\dimen198
+\g_tmpa_dim=\dimen199
+\g_tmpb_dim=\dimen200
+\c_zero_skip=\skip60
+\c_max_skip=\skip61
+\l_tmpa_skip=\skip62
+\l_tmpb_skip=\skip63
+\g_tmpa_skip=\skip64
+\g_tmpb_skip=\skip65
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3keys.sty
+Package: l3keys 2013/12/08 v4614 L3 Experimental key-value interfaces
+\g__keyval_level_int=\count172
+\l_keys_choice_int=\count173
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3fp.sty
+Package: l3fp 2014/01/04 v4642 L3 Floating points
+\c__fp_leading_shift_int=\count174
+\c__fp_middle_shift_int=\count175
+\c__fp_trailing_shift_int=\count176
+\c__fp_big_leading_shift_int=\count177
+\c__fp_big_middle_shift_int=\count178
+\c__fp_big_trailing_shift_int=\count179
+\c__fp_Bigg_leading_shift_int=\count180
+\c__fp_Bigg_middle_shift_int=\count181
+\c__fp_Bigg_trailing_shift_int=\count182
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3box.sty
+Package: l3box 2013/07/28 v4581 L3 Experimental boxes
+\c_empty_box=\box53
+\l_tmpa_box=\box54
+\l_tmpb_box=\box55
+\g_tmpa_box=\box56
+\g_tmpb_box=\box57
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3coffins.sty
+Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
+\l__coffin_internal_box=\box58
+\l__coffin_internal_dim=\dimen201
+Normal \dimen register pool exhausted, switching to extended pool.
+\l__coffin_offset_x_dim=\dimen256
+\l__coffin_offset_y_dim=\dimen257
+\l__coffin_x_dim=\dimen258
+\l__coffin_y_dim=\dimen259
+\l__coffin_x_prime_dim=\dimen260
+\l__coffin_y_prime_dim=\dimen261
+\c_empty_coffin=\box59
+\l__coffin_aligned_coffin=\box60
+\l__coffin_aligned_internal_coffin=\box61
+\l_tmpa_coffin=\box62
+\l_tmpb_coffin=\box63
+\l__coffin_display_coffin=\box64
+\l__coffin_display_coord_coffin=\box65
+\l__coffin_display_pole_coffin=\box66
+\l__coffin_display_offset_dim=\dimen262
+\l__coffin_display_x_dim=\dimen263
+\l__coffin_display_y_dim=\dimen264
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3color.sty
+Package: l3color 2012/08/29 v4156 L3 Experimental color support
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3luatex.sty
+Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
+\g__cctab_allocate_int=\count183
+\g__cctab_stack_int=\count184
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3candidates.sty
+Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen265
+\l__box_bottom_dim=\dimen266
+\l__box_left_dim=\dimen267
+\l__box_right_dim=\dimen268
+\l__box_top_new_dim=\dimen269
+\l__box_bottom_new_dim=\dimen270
+\l__box_left_new_dim=\dimen271
+\l__box_right_new_dim=\dimen272
+\l__box_internal_box=\box67
+\l__coffin_bounding_shift_dim=\dimen273
+\l__coffin_left_corner_dim=\dimen274
+\l__coffin_right_corner_dim=\dimen275
+\l__coffin_bottom_corner_dim=\dimen276
+\l__coffin_top_corner_dim=\dimen277
+\l__coffin_scaled_total_height_dim=\dimen278
+\l__coffin_scaled_width_dim=\dimen279
+))
+\mhchem@ce@result=\toks42
+\mhchem@ce@part=\toks43
+\mhchem@arrow@deployType=\toks44
+\mhchem@arrow@params=\toks45
+\mhchem@arrowlength@pgf=\skip66
+\mhchem@bondwidth=\skip67
+\mhchem@bondheight=\skip68
+\mhchem@smallbondwidth@tmpA=\skip69
+\mhchem@smallbondwidth@tmpB=\skip70
+\mhchem@smallbondwidth=\skip71
+\__mhchem_option_version_int=\count185
+\mhchem@prepostscript@tmp@i=\skip72
+\mhchem@prepostscript@tmp@ii=\skip73
+\mhchem@mathbox@tmp@i=\skip74
+\mhchem@mathbox@tmp@ii=\skip75
+\mhchem@minispace@tmp=\skip76
+\mhchem@option@minussidebearingleft=\skip77
+\mhchem@option@minussidebearingright=\skip78
+
+
+Package mhchem Warning: You did not specify a 'version' option for the mhchem
+(mhchem)                package. If you are about to create a new document,
+(mhchem)                please write \usepackage[version=3]{mhchem} in your
+(mhchem)                preamble in order to use the most recent version of
+(mhchem)                mhchem.
+
+) (/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemedove.sty
 Package: beamercolorthemedove 2012/02/23  (rcs-revision 406bcaf3a3c7)
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 30.
+(hyperref)                removing `math shift' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beta' on input line 30.
+(hyperref)                removing `\beta' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 30.
+(hyperref)                removing `math shift' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@a' on input line 30.
+(hyperref)                removing `\reserved@a' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@b' on input line 30.
+(hyperref)                removing `\reserved@b' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 30.
+(hyperref)                removing `\<let>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 30.
+(hyperref)                removing `\<let>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@c' on input line 30.
+(hyperref)                removing `\reserved@c' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\insertdate' on input line 30.
+(hyperref)                removing `\insertdate' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beamer@shortdate' on input line 30.
+(hyperref)                removing `\beamer@shortdate' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\insertdate' on input line 30.
+(hyperref)                removing `\insertdate' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beamer@shortdate' on input line 30.
+(hyperref)                removing `\beamer@shortdate' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@a' on input line 30.
+(hyperref)                removing `\reserved@a' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@b' on input line 30.
+(hyperref)                removing `\reserved@b' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 30.
+(hyperref)                removing `\<let>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 30.
+(hyperref)                removing `\<let>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@c' on input line 30.
+(hyperref)                removing `\reserved@c' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\insertdate' on input line 30.
+(hyperref)                removing `\insertdate' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beamer@shortdate' on input line 30.
+(hyperref)                removing `\beamer@shortdate' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\insertdate' on input line 30.
+(hyperref)                removing `\insertdate' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 30.
+(hyperref)                removing `\<def>-command' on input line 31.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beamer@shortdate' on input line 30.
+(hyperref)                removing `\beamer@shortdate' on input line 31.
 
 (./Pres_beta.aux
 
@@ -1075,20 +1279,20 @@ LaTeX Warning: Label `fig:test' multiply defined.
 )
 \openout1 = `Pres_beta.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1126,17 +1330,17 @@ LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count157
-\scratchdimen=\dimen193
-\scratchbox=\box53
-\nofMPsegments=\count158
-\nofMParguments=\count159
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count160
-\MPscratchDim=\dimen194
-\MPnumerator=\count161
-\makeMPintoPDFobject=\count162
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count186
+\scratchdimen=\dimen280
+\scratchbox=\box68
+\nofMPsegments=\count187
+\nofMParguments=\count188
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count189
+\MPscratchDim=\dimen281
+\MPnumerator=\count190
+\makeMPintoPDFobject=\count191
+\everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1153,8 +1357,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 30.
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring OFF on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1162,58 +1366,58 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count163
+\c@section@level=\count192
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (./Pres_beta.out) (./Pres_beta.out)
 \@outlinefile=\write5
 \openout5 = `Pres_beta.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 30.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 30.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 31.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 30.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 30.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 30.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 30.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 30.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 30.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 30.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 30.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 30.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 30.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 30.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 31.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1239,370 +1443,58 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 30.
+LaTeX Info: Redefining \includegraphics on input line 31.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./Pres_beta.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+<cs.png, id=13, 257.96375pt x 196.735pt>
+File: cs.png Graphic file (type png)
+ <use cs.png>
+Package pdftex.def Info: cs.png used on input line 63.
+(pdftex.def)             Requested size: 103.18365pt x 78.6926pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 34.
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 \end{frame}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+<tl.png, id=14, 332.24126pt x 152.57pt>
+File: tl.png Graphic file (type png)
+ <use tl.png>
+Package pdftex.def Info: tl.png used on input line 63.
+(pdftex.def)             Requested size: 132.89413pt x 61.02692pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 34.
+(Font)              size <5> substituted on input line 63.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<cs.png, id=52, 257.96375pt x 196.735pt>
-File: cs.png Graphic file (type png)
- <use cs.png>
-Package pdftex.def Info: cs.png used on input line 62.
-(pdftex.def)             Requested size: 103.18365pt x 78.6926pt.
-
-! Undefined control sequence.
-<argument> Esquema Decaimento \ce 
-                                  {^{137}_{55}Cs}
-l.62 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<argument> Esquema Decaimento \ce {^{137}_{55}Cs}
-                                                 
-l.62 \end{frame}
-                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.62 \end{frame}
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-<argument> Esquema Decaimento \ce 
-                                  {^{137}_{55}Cs}
-l.62 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<argument> Esquema Decaimento \ce {^{137}_{55}Cs}
-                                                 
-l.62 \end{frame}
-                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.62 \end{frame}
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-<tl.png, id=53, 332.24126pt x 152.57pt>
-File: tl.png Graphic file (type png)
- <use tl.png>
-Package pdftex.def Info: tl.png used on input line 62.
-(pdftex.def)             Requested size: 132.89413pt x 61.02692pt.
-
-! Undefined control sequence.
-<argument> Esquema Decaimento \ce 
-                                  {^{204}_{81}Tl}
-l.62 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<argument> Esquema Decaimento \ce {^{204}_{81}Tl}
-                                                 
-l.62 \end{frame}
-                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.62 \end{frame}
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-<argument> Esquema Decaimento \ce 
-                                  {^{204}_{81}Tl}
-l.62 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<argument> Esquema Decaimento \ce {^{204}_{81}Tl}
-                                                 
-l.62 \end{frame}
-                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.62 \end{frame}
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[2
-
- <./cs.png> <./tl.png>] <bi.png, id=92, 322.95656pt x 262.73157pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./cs.png> <./tl.png>]
+<bi.png, id=56, 322.95656pt x 262.73157pt>
 File: bi.png Graphic file (type png)
-
-<use bi.png>
-Package pdftex.def Info: bi.png used on input line 85.
+ <use bi.png>
+Package pdftex.def Info: bi.png used on input line 86.
 (pdftex.def)             Requested size: 129.18033pt x 105.09076pt.
-
-! Undefined control sequence.
-<argument> Esquema Decaimento \ce 
-                                  {^{207}_{83}Bi}
-l.85 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.85 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<argument> Esquema Decaimento \ce {^{207}_{83}Bi}
-                                                 
-l.85 \end{frame}
-                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.85 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.85 \end{frame}
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-<argument> Esquema Decaimento \ce 
-                                  {^{207}_{83}Bi}
-l.85 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.85 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<argument> Esquema Decaimento \ce {^{207}_{83}Bi}
-                                                 
-l.85 \end{frame}
-                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.85 \end{frame}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.85 \end{frame}
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 pdfTeX warning (ext4): destination with the same identifier (name{fig:test}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 \end{frame}
-                 [3
+l.86 \end{frame}
+                 [2
 
- <./bi.png>] <MONT.png, id=120, 1074.0125pt x 351.3125pt>
+ <./bi.png>] <MONT.png, id=90, 1074.0125pt x 351.3125pt>
 File: MONT.png Graphic file (type png)
 
 <use MONT.png>
-Package pdftex.def Info: MONT.png used on input line 108.
+Package pdftex.def Info: MONT.png used on input line 109.
 (pdftex.def)             Requested size: 247.01767pt x 80.80017pt.
 
-Overfull \hbox (93.37274pt too wide) in paragraph at lines 108--108
+Overfull \hbox (93.37274pt too wide) in paragraph at lines 109--109
  [][] 
  []
 
@@ -1610,19 +1502,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:sub1}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \end{frame}
+l.109 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{sub@fig:sub1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \end{frame}
-                  <juncpn.png, id=121, 554.07pt x 303.1325pt>
+l.109 \end{frame}
+                  <juncpn.png, id=91, 554.07pt x 303.1325pt>
 File: juncpn.png Graphic file (type png)
  <use juncpn.png>
-Package pdftex.def Info: juncpn.png used on input line 108.
+Package pdftex.def Info: juncpn.png used on input line 109.
 (pdftex.def)             Requested size: 166.22227pt x 90.94044pt.
 
-Overfull \hbox (12.57735pt too wide) in paragraph at lines 108--108
+Overfull \hbox (12.57735pt too wide) in paragraph at lines 109--109
  [][] 
  []
 
@@ -1630,224 +1522,116 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:sub2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \end{frame}
+l.109 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{sub@fig:sub2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \end{frame}
+l.109 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{fig:test}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \end{frame}
-                  [4
+l.109 \end{frame}
+                  [3
 
  <./MONT.png> <./juncpn.png>]
-<esplincs.pdf, id=148, 569.12625pt x 385.44pt>
+<esplincs.pdf, id=117, 569.12625pt x 385.44pt>
 File: esplincs.pdf Graphic file (type pdf)
  <use esplincs.pdf>
-Package pdftex.def Info: esplincs.pdf used on input line 120.
+Package pdftex.def Info: esplincs.pdf used on input line 121.
 (pdftex.def)             Requested size: 142.2812pt x 96.35976pt.
 
-<esplogcs.pdf, id=149, 569.12625pt x 385.44pt>
+<esplogcs.pdf, id=118, 569.12625pt x 385.44pt>
 File: esplogcs.pdf Graphic file (type pdf)
  <use esplogcs.pdf>
-Package pdftex.def Info: esplogcs.pdf used on input line 120.
+Package pdftex.def Info: esplogcs.pdf used on input line 121.
 (pdftex.def)             Requested size: 142.2812pt x 96.35976pt.
-
-! Undefined control sequence.
-<recently read> \ce 
-                    
-l.120 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[5
+ [4
 
  <./esplincs.pdf, page is rotated 90 degrees> <./esplogcs.pdf, page is rotated 
-90 degrees>] [6
+90 degrees>] [5
 
-] <calib2.pdf, id=289, 569.12625pt x 385.44pt>
+] <calib2.pdf, id=261, 569.12625pt x 385.44pt>
 File: calib2.pdf Graphic file (type pdf)
-
-<use calib2.pdf>
-Package pdftex.def Info: calib2.pdf used on input line 201.
+ <use calib2.pdf>
+Package pdftex.def Info: calib2.pdf used on input line 202.
 (pdftex.def)             Requested size: 142.2812pt x 96.35976pt.
- [7
+ [6
 
- <./calib2.pdf, page is rotated 90 degrees>]
-! Undefined control sequence.
-<argument> ...{\the \c@section }{Endpoint de $\ce 
-                                                  {^{204}_{81}Tl}$}{\the \c@...
-l.204 \section{Endpoint de $\ce{^{204}_{81}Tl}$}
-                                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ <./calib2.pdf, page is rotated 90 degrees>] [7
 
-! Undefined control sequence.
-<argument> ...{\the \c@section }{Endpoint de $\ce 
-                                                  {^{204}_{81}Tl}$}{\the \c@...
-l.204 \section{Endpoint de $\ce{^{204}_{81}Tl}$}
-                                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+] [8
 
-! Undefined control sequence.
-\secname ->Endpoint de $\ce 
-                            {^{204}_{81}Tl}$
-l.204 \section{Endpoint de $\ce{^{204}_{81}Tl}$}
-                                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+] [9
 
-! Undefined control sequence.
-\secname ->Endpoint de $\ce 
-                            {^{204}_{81}Tl}$
-l.204 \section{Endpoint de $\ce{^{204}_{81}Tl}$}
-                                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 204.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 204.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 204.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 204.
-
-! Undefined control sequence.
-<recently read> \ce 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \ce 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[8
+] [10
 
 ]
-! Undefined control sequence.
-<recently read> \ce 
-                    
-l.219 \end{frame}
+! Argument of \frame has an extra }.
+<inserted text> 
+                \par 
+l.239 ...udo do espectro do $\ce{^{207}_{83}Bi}$}}
+                                                  
+? 
+Runaway argument?
+\frametitle {Estudo do espectro do $\ce {^{207}_{83}Bi}$}
+! Paragraph ended before \frame was complete.
+<to be read again> 
+                   \par 
+l.239 ...udo do espectro do $\ce{^{207}_{83}Bi}$}}
+                                                  
+? 
+! Interruption.
+<to be read again> 
+                   }
+l.239 ...udo do espectro do $\ce{^{207}_{83}Bi}$}}
+                                                  
+? 
+! Extra }, or forgotten \endgroup.
+<recently read> }
                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[9
-
-]
-! Undefined control sequence.
-<recently read> \ce 
-                    
-l.227 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[10
-
-]
-\tf@nav=\write6
-\openout6 = `Pres_beta.nav'.
-
-\tf@toc=\write7
-\openout7 = `Pres_beta.toc'.
-
-\tf@snm=\write8
-\openout8 = `Pres_beta.snm'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
- (./Pres_beta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
-Package rerunfilecheck Info: File `Pres_beta.out' has not changed.
-(rerunfilecheck)             Checksum: 3F152C6D92958729FE9539FDA4F8AD80;54.
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.0pt have occurred.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
- )
-(\end occurred when \ifx on line 30 was incomplete)
-(\end occurred when \unless\ifcsname on line 30 was incomplete) 
+l.239 ...udo do espectro do $\ce{^{207}_{83}Bi}$}}
+                                                  
+? X
+ 
 Here is how much of TeX's memory you used:
- 17267 strings out of 494963
- 314393 string characters out of 6179647
- 407622 words of memory out of 5000000
- 20048 multiletter control sequences out of 15000+600000
- 15233 words of font info for 57 fonts, out of 8000000 for 9000
+ 22693 strings out of 494963
+ 426127 string characters out of 6179648
+ 504748 words of memory out of 5000000
+ 25389 multiletter control sequences out of 15000+600000
+ 16131 words of font info for 60 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 49i,14n,53p,457b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-si12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Pres_beta.pdf (10 pages, 507962 bytes).
+ 49i,19n,53p,10351b,781s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Pres_beta.pdf (10 pages, 521599 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
- 365 compressed objects within 4 object streams
- 30 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 489 PDF objects out of 1000 (max. 8388607)
+ 363 compressed objects within 4 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Pres_beta.pdf (14 pages, 552794 bytes).
+PDF statistics:
+ 596 PDF objects out of 1000 (max. 8388607)
+ 467 compressed objects within 5 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

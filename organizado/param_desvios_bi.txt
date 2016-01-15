@@ -3,5 +3,5 @@ titulo:Desvios(%) em funcao da energia ;Energia(MeV); Desvios(%)
 func:[0] + [1]*x
 xmin:400
 xmax:1050
-ymin:0.4
-ymax:1.6
+ymin:-1.2
+ymax:-0.4

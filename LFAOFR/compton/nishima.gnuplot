@@ -26,7 +26,7 @@ f2(x)=f(x)/f(20*pi/180)
 g(x)=z*(r**2)*(1+cos(x)**2)/2
 g2(x)=g(x)/g(20*pi/180)
 
-plot 'sec_dif.txt' using ($1*pi/180):($2):($3) pt 0 ps 1 with yerrorbars title "Pontos experimentais", g2(x) title 'Thomson', f2(x) title 'Klein-Nishima'
+plot 'sec_dif_20.txt' using ($1*pi/180):($2):($3) pt 0 ps 1 with yerrorbars title "Pontos experimentais", g2(x) title 'Thomson', f2(x) title 'Klein-Nishima'
 
 
 #print "declive"
