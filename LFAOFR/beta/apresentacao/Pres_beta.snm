@@ -5,5 +5,10 @@
 \beamer@slide {fig:test}{2}
 \beamer@slide {fig:test}{3}
 \beamer@slide {Ee}{3}
-\beamer@slide {centroide}{5}
-\beamer@slide {e_centroide}{5}
+\beamer@slide {fig:sub1}{4}
+\beamer@slide {sub@fig:sub1}{4}
+\beamer@slide {fig:sub2}{4}
+\beamer@slide {sub@fig:sub2}{4}
+\beamer@slide {fig:test}{4}
+\beamer@slide {centroide}{6}
+\beamer@slide {e_centroide}{6}
