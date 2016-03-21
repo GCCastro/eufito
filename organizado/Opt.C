@@ -71,7 +71,7 @@ TGraphErrors* Opt::Ajuste(TGraphErrors* gr1)
   f1->SetLineColor(kBlue);
   f1->SetLineWidth(2);
 
-  f1->SetParameters(-0.001,-0.5);
+  f1->SetParameters(0.001,1);
   //f1->SetParameters(1,0.001,8000,118.,10);
   //f1->SetParLimits(4,0,100000);
   //f1->SetParLimits(3,95.,110.);

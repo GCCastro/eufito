@@ -84,7 +84,7 @@ int main(int argc, char **argv)
   {
     TGraphErrors* gr = Decisao->Grafico();
     gStyle->SetOptFit();
-    for(int i=0; i<=19; i++)
+    //for(int i=0; i<=19; i++)
       //cout << "erro de x:" << gr->GetErrorX(i) << " erro de y:" << gr->GetErrorY(i) << endl;
     Decisao->Ajuste(gr);
     gr->Draw();
@@ -93,10 +93,10 @@ int main(int argc, char **argv)
     gPad->Update();
 
     TPaveStats *stats1 = (TPaveStats*)gr->GetListOfFunctions()->FindObject("stats");
-    stats1->SetX1NDC(.6); 
+    /*stats1->SetX1NDC(.6); 
     stats1->SetX2NDC(.85);
     stats1->SetY1NDC(0.7);
-    stats1->SetY2NDC(0.4);
+    stats1->SetY2NDC(0.4);*/
 
   }
 

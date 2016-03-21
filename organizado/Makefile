@@ -6,7 +6,7 @@
 
 # Global Variable Declarations
 CC= g++
-FCLIB= -I ../../../LIBs
+#FCLIB= -I ../../../LIBs
 
 ##root links and compiler flags
 CFLAGS = -g -Wall `root-config --cflags`
@@ -33,7 +33,7 @@ all: Fit
 ## .o generator
 %.o:%.C 
 	@echo Installing Virus...
-	$(CC)  -c  $(CFLAGS) $(FCLIB)   $<  -o $@ 
+	$(CC)  -c  $(CFLAGS)  $<  -o $@ 
 
 FitExe: fitter.exe
 	@./fitter.exe	
